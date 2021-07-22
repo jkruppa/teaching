@@ -1,2 +1,2 @@
-# Teaching material
-Collection of teaching material and code which I use in my courses. Partly for didactic reasons with gaps - or sometimes a mistake. Probably also didactic reasons.
+# Lehrmaterial
+Sammlung von Lehrmaterial und Code, die ich in meinen Kursen verwende. Teilweise aus didaktischen Gründen mit Lücken - oder auch mal einem Fehler. Wahrscheinlich auch aus didaktischen Gründen.

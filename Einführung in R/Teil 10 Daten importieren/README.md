@@ -2,7 +2,7 @@
 
 Die hier gezeigten Daten sind simulierte Daten und haben keinen echten Bezug zu Patienten
 
-´´´r
+```r
 ## ------------------------------------------------------------
 ## by J.Kruppa on Friday, July 30, 2021 (08:42)
 library(tidyverse)
@@ -80,4 +80,4 @@ foo <- read_excel_allsheets("dummy_data_sheets.xlsx")
 bar <- foo[[1]]
 foo[[2]]
 foo[[3]]
-
+```

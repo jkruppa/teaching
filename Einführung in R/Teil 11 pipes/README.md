@@ -1,4 +1,4 @@
-´´´r
+```r
 ## ------------------------------------------------------------
 ## by J.Kruppa on Tuesday, August  3, 2021 (08:45)
 library(tidyverse)
@@ -31,3 +31,4 @@ iris_tbl <- iris_df %>%
 ## mit "Punkt" 
 iris_df %>%
   set_names(., c("SL", "SW", "PL", "PW", "species"))
+```

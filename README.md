@@ -37,3 +37,30 @@ Sammlung von Lehrmaterial und Code, die ich in meinen Kursen verwende. Teilweise
 
 [Markdown - Summary](#Getting-started-with-Markdown)
 
+
+Grundlagen in R ( Level 1)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC
+
+Programmieren in R (Level 2)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEFp6T3BKhWGoC2mF-ID31co
+
+Spielweise in R (Level 3)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEFZeYClBKad6yurjUzc8jXp
+
+Grundlagen in Statistik und Data Science (Level 1)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEHA3HK3OJfjyENEja0Omser
+
+Vertiefung in Statistik und Data Science (Level 2)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6
+
+
+## Vollständige Vorlesungen
+
+Statistik für Biowissenschaften I
+https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n
+
+Statistik für Biowissenschaften II (SoSe 2021)
+https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_
+
+
+

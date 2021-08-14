@@ -1,10 +1,13 @@
 # Hilfe! Wo finde ich was?
 
-Hallo erstmal! Freut mich, dass du an meinen Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. 
-
+Hallo erstmal! Freut mich, dass du an meinen Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Über diesem Text findest du alle Dateien, die in den Videos angelegt und benutzt werden. Jedenfalls die meisten. Also dann Orientieren wir uns einmal. Grob gibt es nun zwei Möglichkeiten oder aber natürlich ein Misch-Masch daraus. 
 
 ## Ich höre keine Vorlesung / Kurs aktuell bei dir
-Also dann Orientieren wir uns einmal. Grob gibt es zwei Möglichkeiten. Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden.
+Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden.
+
+## Ich bin in einem deiner Kurse
+
+
 
 # Wo ist was?
 =============================

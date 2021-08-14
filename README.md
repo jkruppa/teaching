@@ -1,8 +1,12 @@
+# Hilfe! Wo finde ich was?
+
+Hallo erstmal! Freut mich, dass du an meinen Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Also dann orientieren wir uns einmal. Grob gibt es zwei Möglichkeiten. Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitte [Vollständige Vorlesungen](#vollständige-vorlesungen) am besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben.
+
 # Wo ist was?
 =============================
 
 - [Getting started with Markdown](#getting-started-with-markdown)
-- [Vollständige Vorlesung](#vollständige-vorlesungen)
+- [Vollständige Vorlesungen](#vollständige-vorlesungen)
 - [Titles](#titles)
 - [Paragraph](#paragraph)
 - [List](#list)

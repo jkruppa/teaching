@@ -8,6 +8,8 @@
 	-  [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1)
 	-  [Vertiefung in Statistik und Data Science (Level 2)](#vertiefung-in-statistik-und-data-science-level-2)
 - [Vollständige Vorlesungen](#vollständige-vorlesungen)
+	- [Statistik für Biowissenschaften I (WiSe 2020/21)](#statistik-für-biowissenschaften-i-wise-202021)
+	- [Statistik für Biowissenschaften II (SoSe 2021)](#statistik-für-biowissenschaften-ii-sose-2021)
 
 # Hilfe! Wo finde ich was?
 

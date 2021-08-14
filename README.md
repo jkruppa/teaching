@@ -45,8 +45,10 @@ Wenn du ein Theme wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 ## Vollständige Vorlesungen
 
+### Statistik für Biowissenschaften I (WiSe 2020/21)
 [Statistik für Biowissenschaften I (WiSe 2020/21)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n)
 
+### Statistik für Biowissenschaften II (SoSe 2021)
 [Statistik für Biowissenschaften II (SoSe 2021)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_)
 
 

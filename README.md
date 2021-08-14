@@ -1,6 +1,6 @@
 # Wo ist was?
 
-- [Hilfe! Wo finde ich was?]()
+- [Hilfe! Wo finde ich was?](#hilfe-wo-finde-ich-was)
 - [YouTube Playlisten](#youtube-playlisten)
 	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
 	-  [Programmieren in R (Level 2)](#programmieren-in-r-level-2)

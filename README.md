@@ -33,25 +33,25 @@ Wenn du ein Theme wiederholen willst oder die die Grundlagen zu schnell gingen, 
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
 
-### Programmieren in R (Level 2) - _Youtube Playlist_
-[Programmieren in R (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFp6T3BKhWGoC2mF-ID31co)
+### Programmieren in R (Level 2) 
+[Programmieren in R (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFp6T3BKhWGoC2mF-ID31co) - _Youtube Playlist_
 
-### Spielweise in R (Level 3) - _Youtube Playlist_
-[Spielweise in R (Level 3)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFZeYClBKad6yurjUzc8jXp)
+### Spielweise in R (Level 3)
+[Spielweise in R (Level 3)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFZeYClBKad6yurjUzc8jXp) - _Youtube Playlist_
 
-### Grundlagen in Statistik und Data Science (Level 1) - _Youtube Playlist_
-[Grundlagen in Statistik und Data Science (Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHA3HK3OJfjyENEja0Omser)
+### Grundlagen in Statistik und Data Science (Level 1)
+[Grundlagen in Statistik und Data Science (Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHA3HK3OJfjyENEja0Omser) - _Youtube Playlist_
 
-### Vertiefung in Statistik und Data Science (Level 2) - _Youtube Playlist_
-[Vertiefung in Statistik und Data Science (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6)
+### Vertiefung in Statistik und Data Science (Level 2)
+[Vertiefung in Statistik und Data Science (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6) - _Youtube Playlist_
 
 ## Vollständige Vorlesungen
 
-### Statistik für Biowissenschaften I (WiSe 2020/21) - _Youtube Playlist_
-[Statistik für Biowissenschaften I (WiSe 2020/21)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n)
+### Statistik für Biowissenschaften I (WiSe 2020/21)
+[Statistik für Biowissenschaften I (WiSe 2020/21)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n) - _Youtube Playlist_
 
-### Statistik für Biowissenschaften II (SoSe 2021) - _Youtube Playlist_
-[Statistik für Biowissenschaften II (SoSe 2021)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_)
+### Statistik für Biowissenschaften II (SoSe 2021)
+[Statistik für Biowissenschaften II (SoSe 2021)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_) - _Youtube Playlist_
 
 
 

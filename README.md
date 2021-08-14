@@ -38,14 +38,22 @@ Wenn du ein Theme wiederholen willst oder die die Grundlagen zu schnell gingen, 
 ### Programmieren in R (Level 2) 
 [Programmieren in R (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFp6T3BKhWGoC2mF-ID31co) - _Youtube Playlist_
 
+[Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Programmieren%20in%20R%20(Level%202)#readme) - _GitHub_
+
 ### Spielweise in R (Level 3)
 [Spielweise in R (Level 3)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFZeYClBKad6yurjUzc8jXp) - _Youtube Playlist_
+
+[Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Spielweise%20in%20R%20(Level%203)#readme) - _GitHub_
 
 ### Grundlagen in Statistik und Data Science (Level 1)
 [Grundlagen in Statistik und Data Science (Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHA3HK3OJfjyENEja0Omser) - _Youtube Playlist_
 
+[Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Grundlagen%20in%20Statistik%20und%20Data%20Science%20(Level%201)#readme) - _GitHub_
+
 ### Vertiefung in Statistik und Data Science (Level 2)
 [Vertiefung in Statistik und Data Science (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6) - _Youtube Playlist_
+
+[Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Vertiefung%20in%20Statistik%20und%20Data%20Science%20(Level%202)#readme) - _GitHub_
 
 ## Vollständige Vorlesungen
 

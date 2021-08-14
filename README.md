@@ -14,39 +14,14 @@ Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Absc
 
 - [YouTube Playlisten](#youtube-playlisten)
 	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
-	-  [Programmieren in R (Level 2)]
-	-  [Grundlagen in Statistik und Data Science (Level 1)]
-	-  [Vertiefung in Statistik und Data Science (Level 2)]
+	-  [Programmieren in R (Level 2)](#programmieren-in-r-level-2)
+	-  [Spielweise in R (Level 3)](#spielweise-in-r-level-3)
+	-  [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1)
+	-  [Vertiefung in Statistik und Data Science (Level 2)](#vertiefung-in-statistik-und-data-science-level-2)
 - [Vollständige Vorlesungen](#vollständige-vorlesungen)
-- [Titles](#titles)
-- [Paragraph](#paragraph)
-- [List](#list)
-	- [List CheckBox](#list-checkbox)
-- [Link](#link)
-	- [Anchor links](#anchor-links)
-- [Blockquote](#blockquote)
-- [Image | GIF](#image--gif)
-- [Style Text](#style-text)
-	- [Italic](#italic)
-	- [Bold](#bold)
-	- [Strikethrough](#strikethrough)
-- [Code](#code)
-- [Email](#email)
-- [Table](#table)
-	- [Table Align](#table-align)
-    	- [Align Center](#align-center)
-    	- [Align Left](#align-left)
-    	- [Align Right](#align-right)
-- [Escape Characters](#escape-characters)
-- [Emoji](#emoji)
-- [Shields Badges](#Shields-Badges)
-- [Markdown Editor](#markdown-editor)
-- [Some links for more in depth learning](#some-links-for-more-in-depth-learning)
-
 
 
 ## YouTube Playlisten
-
 
 [Markdown - Summary](#Getting-started-with-Markdown)
 

@@ -13,11 +13,10 @@ Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Absc
 =============================
 
 - [YouTube Playlisten](#youtube-playlisten)
-	-  Grundlagen in R (Level 1)
-	-  Programmieren in R (Level 2)
-	-  Spielweise in R (Level 3)
-	-  Grundlagen in Statistik und Data Science (Level 1)
-	-  Vertiefung in Statistik und Data Science (Level 2)
+	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
+	-  [Programmieren in R (Level 2)]
+	-  [Grundlagen in Statistik und Data Science (Level 1)]
+	-  [Vertiefung in Statistik und Data Science (Level 2)]
 - [Vollständige Vorlesungen](#vollständige-vorlesungen)
 - [Titles](#titles)
 - [Paragraph](#paragraph)

@@ -1,3 +1,14 @@
+# Wo ist was?
+
+- [Hilfe! Wo finde ich was?]()
+- [YouTube Playlisten](#youtube-playlisten)
+	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
+	-  [Programmieren in R (Level 2)](#programmieren-in-r-level-2)
+	-  [Spielweise in R (Level 3)](#spielweise-in-r-level-3)
+	-  [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1)
+	-  [Vertiefung in Statistik und Data Science (Level 2)](#vertiefung-in-statistik-und-data-science-level-2)
+- [Vollständige Vorlesungen](#vollständige-vorlesungen)
+
 # Hilfe! Wo finde ich was?
 
 Hallo erstmal! Freut mich, dass du an meinen (Lehr)Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Über diesem Text findest du alle Dateien, die in den Videos angelegt und benutzt werden. Jedenfalls die meisten. Also dann Orientieren wir uns einmal. Grob gibt es nun zwei Möglichkeiten oder aber natürlich ein Misch-Masch daraus. 
@@ -12,15 +23,7 @@ Wenn du mit nicht bei der R Programmierung folgen kannst, dann solttest du dir d
 
 Wenn du ein Theme wiederholen willst oder die die Grundlagen zu schnell gingen, dann suche doch einmal in den [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1) Videos für das passende Thema.
 
-# Wo ist was?
 
-- [YouTube Playlisten](#youtube-playlisten)
-	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
-	-  [Programmieren in R (Level 2)](#programmieren-in-r-level-2)
-	-  [Spielweise in R (Level 3)](#spielweise-in-r-level-3)
-	-  [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1)
-	-  [Vertiefung in Statistik und Data Science (Level 2)](#vertiefung-in-statistik-und-data-science-level-2)
-- [Vollständige Vorlesungen](#vollständige-vorlesungen)
 
 
 ## YouTube Playlisten

@@ -10,7 +10,6 @@ Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Absc
 
 
 # Wo ist was?
-=============================
 
 - [YouTube Playlisten](#youtube-playlisten)
 	-  [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1)
@@ -22,8 +21,6 @@ Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Absc
 
 
 ## YouTube Playlisten
-
-[Markdown - Summary](#Getting-started-with-Markdown)
 
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_

@@ -2,7 +2,7 @@
 =============================
 
 - [Getting started with Markdown](#getting-started-with-markdown)
-- [Vollständige Vorlesung](#vollständige-vorlesung)
+- [Vollständige Vorlesung](#vollständige-vorlesungen)
 - [Titles](#titles)
 - [Paragraph](#paragraph)
 - [List](#list)

@@ -1,6 +1,10 @@
 # Hilfe! Wo finde ich was?
 
-Hallo erstmal! Freut mich, dass du an meinen Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Also dann orientieren wir uns einmal. Grob gibt es zwei Möglichkeiten. Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitte [Vollständige Vorlesungen](#vollständige-vorlesungen) am besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben.
+Hallo erstmal! Freut mich, dass du an meinen Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. 
+
+
+## Ich höre keine Vorlesung / Kurs aktuell bei dir
+Also dann Orientieren wir uns einmal. Grob gibt es zwei Möglichkeiten. Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden.
 
 # Wo ist was?
 =============================
@@ -61,7 +65,7 @@ https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6
 
 ## Vollständige Vorlesungen
 
-Statistik für Biowissenschaften I
+Statistik für Biowissenschaften I (WiSe 2020/21)
 https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n
 
 Statistik für Biowissenschaften II (SoSe 2021)

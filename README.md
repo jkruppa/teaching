@@ -28,11 +28,11 @@ Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Absc
 
 ## Ich bin in einer deiner Vorlesungen / Kurse
 
-Ja, das macht die Sachlage *etwas* komplizierter. Aber auch hier gibt es Hilfe. 
+Ja, das macht die Sachlage *etwas* komplizierter. Aber auch hier gibt es Hilfe. Denn ich weiß natürlich nicht wo dir der Schuh zwickt. Du hast aber den Vorteil mich direkt in der Vorlesung einmal nach einem passenden Video zu fragen, wenn du mit ein bisschen Suchen nicht das passende findest. Ich versuche möglichst präzise in den Titeln und der Beschreibung zu sein. Manchmal hilft auch die Kapitel sich anzuschauen. **Wenn was fehlt, bitte sag mir Bescheid! Dann mache ich ein Video darüber. Danke für deine Mithilfe!**
 
-Wenn du mit nicht bei der R Programmierung folgen kannst, dann solttest du dir die [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1) Videos anschauen. In den ersten Videos erfährst du, wie man grundsätzlich mit R umgeht und was es für Besonderheiten in der Programmierung gibt, die dir vielleicht jetzt Rästel aufgeben.
+Wenn du mit nicht bei der R Programmierung folgen kannst, dann solltest du dir die [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1) Videos anschauen. In den ersten Videos erfährst du, wie man grundsätzlich mit R umgeht und was es für Besonderheiten in der Programmierung gibt, die dir vielleicht jetzt Rätsel aufgeben.
 
-Wenn du ein Theme wiederholen willst oder die die Grundlagen zu schnell gingen, dann suche doch einmal in den [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1) Videos für das passende Thema.
+Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, dann suche doch einmal in den [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1) Videos für das passende Thema.
 
 # Youtube Playlisten
 

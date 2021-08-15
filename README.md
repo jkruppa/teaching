@@ -36,37 +36,39 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 # Youtube Playlisten
 
-## Grundlagen in R (Level 1)
+**Hilfe sind das viele Videos**. Ja, da kommt schon was zusammen. Aber viele Videos sind nicht so lang oder aber durch die Kapitel unter den Videos sortiert. Das Raussuchen und sich mit den Videos beschäftigen gehört auch zum Lernprozess mit dazu und somit zum Teil auch gewollt. 
+
+### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
 
 [Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Grundlagen%20in%20R%20(Level%201)#readme) - _GitHub_
 
-## Programmieren in R (Level 2) 
+### Programmieren in R (Level 2) 
 [Programmieren in R (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFp6T3BKhWGoC2mF-ID31co) - _Youtube Playlist_
 
 [Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Programmieren%20in%20R%20(Level%202)#readme) - _GitHub_
 
-## Spielweise in R (Level 3)
+### Spielweise in R (Level 3)
 [Spielweise in R (Level 3)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFZeYClBKad6yurjUzc8jXp) - _Youtube Playlist_
 
 [Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Spielweise%20in%20R%20(Level%203)#readme) - _GitHub_
 
-## Grundlagen in Statistik und Data Science (Level 1)
+### Grundlagen in Statistik und Data Science (Level 1)
 [Grundlagen in Statistik und Data Science (Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHA3HK3OJfjyENEja0Omser) - _Youtube Playlist_
 
 [Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Grundlagen%20in%20Statistik%20und%20Data%20Science%20(Level%201)#readme) - _GitHub_
 
-## Vertiefung in Statistik und Data Science (Level 2)
+### Vertiefung in Statistik und Data Science (Level 2)
 [Vertiefung in Statistik und Data Science (Level 2)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGYfNSmEPWBj6JGpNf8JNu6) - _Youtube Playlist_
 
 [Skripte und Daten](https://github.com/jkruppa/teaching/tree/main/Vertiefung%20in%20Statistik%20und%20Data%20Science%20(Level%202)#readme) - _GitHub_
 
 # Vollständige Vorlesungen
 
-## Statistik für Biowissenschaften I (WiSe 2020/21)
+### Statistik für Biowissenschaften I (WiSe 2020/21)
 [Statistik für Biowissenschaften I (WiSe 2020/21)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n) - _Youtube Playlist_
 
-## Statistik für Biowissenschaften II (SoSe 2021)
+### Statistik für Biowissenschaften II (SoSe 2021)
 [Statistik für Biowissenschaften II (SoSe 2021)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_) - _Youtube Playlist_
 
 

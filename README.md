@@ -74,6 +74,8 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 # Literatur
 
+Bitte für Literaturempfehlungen mich nochmal ansprechen. Ich möchte hier kein Review über verschiedene Bücher schreiben. Die angegebenen spielgeln meine Lehrphilosophie wieder oder finde ich sejhr empfehlenswert. Häufig sind die Bücher auch als eBook über Universitätsbüchereinen zu erhalten.
+
 ## Eigene Referenzen
 - **Kruppa, J.**, Rohmann, J., Herrmann, C., Sieg, M., Rubarth, K., & Piper, S. (2021). What statistics instructors need to know about concept acquisition to make statistics stick. Journal of University Teaching & Learning Practice, 18(2), 02.
 - Herrmann, C., Berger, U., Weiß, C., Burkholder, I., Rauch, G., & **Kruppa, J.** (2021) Zeig mir Health Data Science!.

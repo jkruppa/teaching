@@ -22,11 +22,11 @@ Also dann Orientieren wir uns einmal. Grob gibt es nun zwei Möglichkeiten oder 
 1. Du hörst gar keine Vorlesung oder Kurs bei mir und bist einfach so hier gelandet. Das freut mich natürlich. Ich hoffe ich kann dir die Statistik näherbringen oder zu mindestens das erklären was du brauchst;
 2. Du nimmst an einer meiner Vorlesungen oder Kursen teil und möchtest etwas wiederholen oder vorab lernen damit du mir besser Folgen kannst. Denn ist ja auch möglich sich Teile der Inhalte schon vorher anzuschauen. Häufig habe ich nicht die Zeit in alle Details der R Grundlagen einzugehen. Hier findest du dann die Videos, die nochmal alles langsam erklären.
 
-## Ich höre keine Vorlesung / Kurs aktuell bei dir
+### Ich höre keine Vorlesung / Kurs aktuell bei dir
 
 Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden. Die Vorlesungen geben aber **keine** Einführung in R. Da sei dir dann die YouTube Playlist [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1) ans Herz gelegt.
 
-## Ich bin in einer deiner Vorlesungen / Kurse
+### Ich bin in einer deiner Vorlesungen / Kurse
 
 Ja, das macht die Sachlage *etwas* komplizierter. Aber auch hier gibt es Hilfe. 
 

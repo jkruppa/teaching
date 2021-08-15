@@ -81,3 +81,6 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 - Rauch, G., Grittner, U., Neumann, K., Herrmann, C. & **Kruppa, J.** (2020). Medizinische Statistik für Dummies. Wiley-VCH.
 
 ## Weitere Quellen
+- One to rule them all: https://www.tidyverse.org/ und natürlich das Buch dazu auch Online: https://r4ds.had.co.nz/
+- Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. O'Reilly Media, Inc. [Online hier: https://r4ds.had.co.nz/]
+- Dormann, C. F. (2013). Parametrische Statistik. Springer Berlin Heidelberg. [Online hier: http://www.biom.uni-freiburg.de/mitarbeiter/dormann/dormann2012statistikskript.pdf]

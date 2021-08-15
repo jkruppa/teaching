@@ -75,9 +75,9 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 # Literatur
 
 ## Eigene Referenzen
-- Kruppa, J., Rohmann, J., Herrmann, C., Sieg, M., Rubarth, K., & Piper, S. (2021). What statistics instructors need to know about concept acquisition to make statistics stick. Journal of University Teaching & Learning Practice, 18(2), 02.
-- Kruppa, J., & Kiehne, B. Statistik lebendig lehren durch Storytelling und forschungsbasiertes Lernen. Beiträge zu Praxis, Praxisforschung und Forschung Jahrgang 2019, 501.
-- Herrmann, C., Berger, U., Weiß, C., Burkholder, I., Rauch, G., & Kruppa, J. Zeig mir Health Data Science!.
-- Rauch, G., Kruppa, J., Grittner, U., Neumann, K., & Herrmann, C. (2020). Medizinische Statistik für Dummies. Wiley-VCH.
+- **Kruppa, J.**, Rohmann, J., Herrmann, C., Sieg, M., Rubarth, K., & Piper, S. (2021). What statistics instructors need to know about concept acquisition to make statistics stick. Journal of University Teaching & Learning Practice, 18(2), 02.
+- **Kruppa, J.**, & Kiehne, B. Statistik lebendig lehren durch Storytelling und forschungsbasiertes Lernen. Beiträge zu Praxis, Praxisforschung und Forschung Jahrgang 2019, 501.
+- Herrmann, C., Berger, U., Weiß, C., Burkholder, I., Rauch, G., & **Kruppa, J.** Zeig mir Health Data Science!.
+- Rauch, G., Grittner, U., Neumann, K., Herrmann, C. & **Kruppa, J.** (2020). Medizinische Statistik für Dummies. Wiley-VCH.
 
 ## Weitere Quellen

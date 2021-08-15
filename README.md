@@ -1,3 +1,5 @@
+*Die Seite ist noch im Aufbau und Sätzen könnne im Nichts enden - sorry dafür*
+
 # Wo ist was?
 
 - [Hilfe! Wo finde ich was?](#hilfe-wo-finde-ich-was)
@@ -13,12 +15,19 @@
 
 # Hilfe! Wo finde ich was?
 
-Hallo erstmal! Freut mich, dass du an meinen (Lehr)Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Über diesem Text findest du alle Dateien, die in den Videos angelegt und benutzt werden. Jedenfalls die meisten. Also dann Orientieren wir uns einmal. Grob gibt es nun zwei Möglichkeiten oder aber natürlich ein Misch-Masch daraus. 
+Hallo erstmal! Freut mich, dass du an meinen (Lehr)Materialien und Lehrvideos Interesse hast. Im Folgenden gibt es eine Auflistung von YouTube Playlisten, die es dir erlauben meinen Kursen besser zu folgen oder aber nachzuarbeiten. Über diesem Text findest du alle Dateien, die in den YouTube Videos angelegt und benutzt werden. Jedenfalls die meisten. 
+
+Also dann Orientieren wir uns einmal. Grob gibt es nun zwei Möglichkeiten oder aber natürlich ein Misch-Masch daraus: 
+
+1. Du hörst gar keine Vorlesung oder Kurs bei mir und bist einfach so hier gelandet. Das freut mich natürlich. Ich hoffe ich kann dir die Statistik näherbringen oder zu mindestens das erklären was du brauchst;
+2. Du nimmst an einer meiner Vorlesungen oder Kursen teil und möchtest etwas wiederholen oder vorab lernen damit du mir besser Folgen kannst. Denn ist ja auch möglich sich Teile der Inhalte schon vorher anzuschauen. Häufig habe ich nicht die Zeit in alle Details der R Grundlagen einzugehen. Hier findest du dann die Videos, die nochmal alles langsam erklären.
 
 ## Ich höre keine Vorlesung / Kurs aktuell bei dir
-Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden. Die Vorlesungen geben aber **keine** Einfürhung in R. Da sei dir dann die YouTube Playlist 
+
+Wenn du vollständige Vorlesungen nachhören willst, dann bist du unter dem Abschnitt [Vollständige Vorlesungen](#vollständige-vorlesungen) am Besten aufgehoben. Dort gibt es zwei Vorlesungen, die unabhängig von meinen aktuellen Kursen dir einen Einblick in die Statistik / Data Science geben. Statistik für Biowissenschaften I (WiSe 2020/21) und Statistik für Biowissenschaften II (SoSe 2021) bauen aufeinander auf. Beide Vorlesungen beinhalten R Code sowie weitreichende Erklärungen. **Wenn** du kein Kurs von mir hörst, sind die beiden Vorlesungen dein roter Faden. Die Vorlesungen geben aber **keine** Einführung in R. Da sei dir dann die YouTube Playlist [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1) ans Herz gelegt.
 
 ## Ich bin in einer deiner Vorlesungen / Kurse
+
 Ja, das macht die Sachlage *etwas* komplizierter. Aber auch hier gibt es Hilfe. 
 
 Wenn du mit nicht bei der R Programmierung folgen kannst, dann solttest du dir die [Grundlagen in R (Level 1)](#grundlagen-in-r-level-1) Videos anschauen. In den ersten Videos erfährst du, wie man grundsätzlich mit R umgeht und was es für Besonderheiten in der Programmierung gibt, die dir vielleicht jetzt Rästel aufgeben.

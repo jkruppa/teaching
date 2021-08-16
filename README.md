@@ -1,4 +1,4 @@
-*Die Seite ist noch im Aufbau und Sätzen könnne im Nichts enden - sorry dafür*
+*Die Seite ist noch im Aufbau und Sätze können im Nichts enden - sorry dafür*
 
 # Wo ist was?
 

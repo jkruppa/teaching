@@ -39,12 +39,14 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 **Hilfe sind das viele Videos**. Ja, da kommt schon was zusammen. Aber viele Videos sind nicht so lang oder aber durch die Kapitel unter den Videos sortiert. Das Raussuchen und sich mit den Videos beschäftigen gehört auch zum Lernprozess mit dazu und somit zum Teil auch gewollt. 
 
-## R Codeblöcke
+### R Codeblöcke
 
+Du findest unter den GitHub Links jeweils die Seite, wo der R Code steht. Eigentlich ist es nur ein Link zu den Verzeichnissen weiter oben. Der R Code sieht so aus:
 ```r
 ## Das hier ist ein Kommentar
 library(tidyverse) ## Laden eines zusätzlichen Paketes
 ```
+Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leider ist bei den komplizierten Beispielen nicht immer alles gleich lauffähig. Du musst die Pakete dann mit `install.packages(tidyverse)` installieren und mit `library(tidyverse)` laden. Mehr dazu in den Videos zu [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1).
 
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
@@ -81,7 +83,7 @@ library(tidyverse) ## Laden eines zusätzlichen Paketes
 
 # Literatur
 
-Bitte für Literaturempfehlungen mich nochmal ansprechen. Ich möchte hier kein Review über verschiedene Bücher schreiben. Die angegebenen spielgeln meine Lehrphilosophie wieder oder finde ich sejhr empfehlenswert. Häufig sind die Bücher auch als eBook über Universitätsbüchereinen zu erhalten.
+Bitte für Literaturempfehlungen mich nochmal ansprechen. Ich möchte hier kein Review über verschiedene Bücher schreiben. Die angegebenen spielgeln meine Lehrphilosophie wieder oder finde ich sehr empfehlenswert. Häufig sind die Bücher auch als eBook über Universitätsbüchereinen zu erhalten.
 
 ## Eigene Referenzen
 - **Kruppa, J.**, Rohmann, J., Herrmann, C., Sieg, M., Rubarth, K., & Piper, S. (2021). What statistics instructors need to know about concept acquisition to make statistics stick. Journal of University Teaching & Learning Practice, 18(2), 02.

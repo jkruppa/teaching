@@ -39,6 +39,13 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 **Hilfe sind das viele Videos**. Ja, da kommt schon was zusammen. Aber viele Videos sind nicht so lang oder aber durch die Kapitel unter den Videos sortiert. Das Raussuchen und sich mit den Videos beschäftigen gehört auch zum Lernprozess mit dazu und somit zum Teil auch gewollt. 
 
+## R Codeblöcke
+
+```r
+## Das hier ist ein Kommentar
+library(tidyverse) ## Laden eines zusätzlichen Paketes
+```
+
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
 

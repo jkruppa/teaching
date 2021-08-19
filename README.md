@@ -50,15 +50,15 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablennamen, Klassennamen und Skalenniveau
 
-Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau
---- | --- | --- | ---  | ---
-weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
-count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous
-dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
-field | mainz, berlin, kiel | factor |  | categorical / discrete
-cancer | 0, 1 | factor |  | dichotomous / binary / nominal
-treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal
-birth | 2001-12-02, 2005-05-23 | date | | |
+Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau | Verteilungsfamilie
+--- | --- | --- | ---  | --- | ---
+weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous | Gaussian
+count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous | Poisson 
+dosis | low, mid, high | ordered |  | categorical / discrete / ordinal | Ordinal
+field | mainz, berlin, kiel | factor |  | categorical / discrete | Multinomial
+cancer | 0, 1 | factor |  | dichotomous / binary / nominal | Binomial
+treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal | Binomial
+birth | 2001-12-02, 2005-05-23 | date | | | |
 
 [Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
 

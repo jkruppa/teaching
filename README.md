@@ -52,8 +52,8 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau 
 --- | --- | --- | ---  | ---
-treatment | "placebo", "aspirin" | character | character/string | 
-dosis | low, mid, high | ordered |  | categorical / discrete
+treatment | "placebo", "aspirin" | character | character/string | nominal
+dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete
 age | 14, 83, 23, 45 | integer | integer | continuous
 response | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous

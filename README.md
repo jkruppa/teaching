@@ -57,6 +57,7 @@ count | 5, 0, 12, 23 | integer | integer | continuous
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete
 treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal
+birth | 2001-12-02, 2005-05-23 | date | | |
 
 [Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
 

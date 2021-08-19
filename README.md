@@ -50,17 +50,13 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablennamen, Klassennamen und Skalenniveau
 
-Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau 
+Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau
 --- | --- | --- | ---  | ---
-treatment | "placebo", "aspirin" | character | character/string | nominal
+weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
+count | 5, 0, 12, 23 | integer | integer | continuous
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete
-age | 14, 83, 23, 45 | integer | integer | continuous
-response | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
-dosis | 2 | 3 | 4 | g
-age | 2 | 3 | 4 | g
-age | 2 | 3 | 4 | g
-
+treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal
 
 [Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
 

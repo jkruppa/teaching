@@ -50,12 +50,18 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablen Klassen, Namen und Eigenschaftsnamen
 
-Variablenname | Klasse (R) | Klasse (Infomatik) | Skaleniveau (Statistik)
---- | --- | --- | ---
-*Still* | `renders` | **nicely** | g
-1 | 2 | 3 | 4
+Variablenname | Klasse (R spezifisch) | Klasse (Infomatik allgemein) | Skaleniveau (Statistik) | Beispiel
+--- | --- | --- | ---  | ---
+trt | `renders` | **nicely** | g  | g
+age | 2 | 3 | 4 | g
+stage | 2 | 3 | 4 | g
+response | 2 | 3 | 4 | g
+dosis | 2 | 3 | 4 | g
+age | 2 | 3 | 4 | g
+age | 2 | 3 | 4 | g
 
 
+[Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
 
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_

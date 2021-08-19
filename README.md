@@ -50,9 +50,8 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablennamen, Klassennamen und Skalenniveau
 
-Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau | Verteilungsfamilie
+Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
 --- | --- | --- | ---  | --- | ---
-weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous | Gaussian
 count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous | Poisson 
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal | Ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete | Multinomial

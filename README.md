@@ -48,6 +48,15 @@ library(tidyverse) ## Laden eines zusätzlichen Paketes
 ```
 Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leider ist bei den komplizierten Beispielen nicht immer alles gleich lauffähig. Du musst die Pakete dann mit `install.packages(tidyverse)` installieren und mit `library(tidyverse)` laden. Mehr dazu in den Videos zu [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1).
 
+### Variablen Klassen, Namen und Eigenschaftsnamen
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+
+
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
 

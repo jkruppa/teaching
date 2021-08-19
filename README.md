@@ -52,6 +52,7 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
 --- | --- | --- | ---  | --- | ---
+weight | 12.3, 12.4, 5.4, 21.3, 13.4 | numeric | double | continuous | Gaussian 
 count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous | Poisson 
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal | Ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete | Multinomial

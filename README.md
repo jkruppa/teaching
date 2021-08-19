@@ -53,9 +53,9 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau 
 --- | --- | --- | ---  | ---
 treatment | "placebo", "aspirin" | character | character/string | 
-age | 14, 83, 23, 45 | numeric | integer | continuous
 dosis | low, mid, high | factor |  | categorical / discrete
-response | 2 | 3 | 4 | g
+age | 14, 83, 23, 45 | integer | integer | continuous
+response | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
 dosis | 2 | 3 | 4 | g
 age | 2 | 3 | 4 | g
 age | 2 | 3 | 4 | g

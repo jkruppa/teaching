@@ -53,7 +53,7 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau
 --- | --- | --- | ---  | ---
 weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
-count | 5, 0, 12, 23 | integer | integer | continuous
+count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete
 treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal

@@ -48,11 +48,11 @@ library(tidyverse) ## Laden eines zusätzlichen Paketes
 ```
 Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leider ist bei den komplizierten Beispielen nicht immer alles gleich lauffähig. Du musst die Pakete dann mit `install.packages(tidyverse)` installieren und mit `library(tidyverse)` laden. Mehr dazu in den Videos zu [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1).
 
-### Variablen Klassen, Namen und Eigenschaftsnamen
+### Variablennamen, Klassennamen und Skalenniveau
 
-Variablenname | Klasse (R spezifisch) | Klasse (Infomatik allgemein) | Skaleniveau (Statistik) | Beispiel
+Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau 
 --- | --- | --- | ---  | ---
-trt | `renders` | **nicely** | g  | g
+trt | "placebo", "aspirin" | character | character/string | 
 age | 2 | 3 | 4 | g
 stage | 2 | 3 | 4 | g
 response | 2 | 3 | 4 | g

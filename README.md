@@ -52,9 +52,9 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 Variablenname | Beispiel | R spezifisch | Infomatik allgemein | Skalenniveau 
 --- | --- | --- | ---  | ---
-trt | "placebo", "aspirin" | character | character/string | 
-age | 2 | 3 | 4 | g
-stage | 2 | 3 | 4 | g
+treatment | "placebo", "aspirin" | character | character/string | 
+age | 14, 83, 23, 45 | numeric | integer | continuous
+dosis | low, mid, high | factor |  | categorical / discrete
 response | 2 | 3 | 4 | g
 dosis | 2 | 3 | 4 | g
 age | 2 | 3 | 4 | g

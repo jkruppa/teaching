@@ -56,6 +56,7 @@ weight | 12.3, 10.3, 9.1, 6.1 | numeric | double | continuous
 count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous
 dosis | low, mid, high | ordered |  | categorical / discrete / ordinal
 field | mainz, berlin, kiel | factor |  | categorical / discrete
+cancer | 0, 1 | factor |  | dichotomous / binary / nominal
 treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal
 birth | 2001-12-02, 2005-05-23 | date | | |
 

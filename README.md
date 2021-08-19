@@ -50,10 +50,10 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablen Klassen, Namen und Eigenschaftsnamen
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+Variablenname | Klasse (R) | Klasse (Infomatik) | Skaleniveau (Statistik)
+--- | --- | --- | ---
+*Still* | `renders` | **nicely** | g
+1 | 2 | 3 | 4
 
 
 

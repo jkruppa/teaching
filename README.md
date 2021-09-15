@@ -50,6 +50,8 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ### Variablennamen, Klassennamen und Skalenniveau
 
+Manchmal ist es ein wenig verwirrend die Gleichheit zwischen den Worten in den verschiedenen Feldern zu sehen. Deshalb hier nochmal eine grobe Tabelle, die dir vielleicht hilft konkrete Spalten in einem Datensatz mit einem Variablennamen und einem Beispiel den Bezeichnungen/Worten in den verschiedenen Disziplienen zuzuordnen.
+
 Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
 --- | --- | --- | ---  | --- | ---
 weight | 12.3, 12.4, 5.4, 21.3, 13.4 | numeric | double | continuous | Gaussian 

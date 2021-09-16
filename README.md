@@ -39,30 +39,8 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 **Hilfe sind das viele Videos**. Ja, da kommt schon was zusammen. Aber viele Videos sind nicht so lang oder aber durch die Kapitel unter den Videos sortiert. Das Raussuchen und sich mit den Videos beschäftigen gehört auch zum Lernprozess mit dazu und somit zum Teil auch gewollt. 
 
-### R Codeblöcke
-
-Du findest unter den GitHub Links jeweils die Seite, wo der R Code steht. Eigentlich ist es nur ein Link zu den Verzeichnissen weiter oben. Der R Code sieht so aus:
-```r
-## Das hier ist ein Kommentar
-library(tidyverse) ## Laden eines zusätzlichen Paketes
-```
-Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leider ist bei den komplizierten Beispielen nicht immer alles gleich lauffähig. Du musst die Pakete dann mit `install.packages(tidyverse)` installieren und mit `library(tidyverse)` laden. Mehr dazu in den Videos zu [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1).
-
-### Variablennamen, Klassennamen und Skalenniveau
-
-Manchmal ist es ein wenig verwirrend die Gleichheit zwischen den Worten in den verschiedenen Feldern zu sehen. Deshalb hier nochmal eine grobe Tabelle, die dir vielleicht hilft konkrete Spalten in einem Datensatz mit einem Variablennamen und einem Beispiel den Bezeichnungen/Worten in den verschiedenen Disziplienen zuzuordnen.
-
-Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
---- | --- | --- | ---  | --- | ---
-weight | 12.3, 12.4, 5.4, 21.3, 13.4 | numeric | double | continuous | Gaussian 
-count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous | Poisson 
-dosis | low, mid, high | ordered |  | categorical / discrete / ordinal | Ordinal
-field | mainz, berlin, kiel | factor |  | categorical / discrete | Multinomial
-cancer | 0, 1 | factor |  | dichotomous / binary / nominal | Binomial
-treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal | Binomial
-birth | 2001-12-02, 2005-05-23 | date | | | |
-
-[Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
+### Konzeptvideos
+[Wie funktioniert Wissenschaft - Das Falsifikationsprinzip](https://youtu.be/h45ftLNsspM)
 
 ### Grundlagen in R (Level 1)
 [Grundlagen in R ( Level 1)](https://www.youtube.com/playlist?list=PLe51bCp9JvEFUnFqaJG5aRmON9i1ZbOYC) - _Youtube Playlist_
@@ -96,6 +74,33 @@ birth | 2001-12-02, 2005-05-23 | date | | | |
 
 ### Statistik für Biowissenschaften II (SoSe 2021)
 [Statistik für Biowissenschaften II (SoSe 2021)](https://www.youtube.com/playlist?list=PLe51bCp9JvEGVmH5pkJUnj-7Y-uK3_yV_) - _Youtube Playlist_
+
+# Übergreifende Informationen
+
+## R Codeblöcke
+
+Du findest unter den GitHub Links jeweils die Seite, wo der R Code steht. Eigentlich ist es nur ein Link zu den Verzeichnissen weiter oben. Der R Code sieht so aus:
+```r
+## Das hier ist ein Kommentar
+library(tidyverse) ## Laden eines zusätzlichen Paketes
+```
+Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leider ist bei den komplizierten Beispielen nicht immer alles gleich lauffähig. Du musst die Pakete dann mit `install.packages(tidyverse)` installieren und mit `library(tidyverse)` laden. Mehr dazu in den Videos zu [Grundlagen in Statistik und Data Science (Level 1)](#grundlagen-in-statistik-und-data-science-level-1).
+
+## Variablennamen, Klassennamen und Skalenniveau
+
+Manchmal ist es ein wenig verwirrend die Gleichheit zwischen den Worten in den verschiedenen Feldern zu sehen. Deshalb hier nochmal eine grobe Tabelle, die dir vielleicht hilft konkrete Spalten in einem Datensatz mit einem Variablennamen und einem Beispiel den Bezeichnungen/Worten in den verschiedenen Disziplienen zuzuordnen.
+
+Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
+--- | --- | --- | ---  | --- | ---
+weight | 12.3, 12.4, 5.4, 21.3, 13.4 | numeric | double | continuous | Gaussian 
+count | 5, 0, 12, 23, 1, 4, 21 | integer | integer | continuous | Poisson 
+dosis | low, mid, high | ordered |  | categorical / discrete / ordinal | Ordinal
+field | mainz, berlin, kiel | factor |  | categorical / discrete | Multinomial
+cancer | 0, 1 | factor |  | dichotomous / binary / nominal | Binomial
+treatment | "placebo", "aspirin" | character | character/string | dichotomous / binary / nominal | Binomial
+birth | 2001-12-02, 2005-05-23 | date | | | |
+
+[Tutorial: tbl_summary](http://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html) - _R package gtsummary_
 
 # Literatur
 

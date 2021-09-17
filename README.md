@@ -70,6 +70,8 @@ Wenn du ein Thema wiederholen willst oder die die Grundlagen zu schnell gingen, 
 
 # Vollständige Vorlesungen
 
+Im folgenden findest du die Mitschnitte von zwei vollständigen Vorlesungen im Bereich Data Science / Statistik. Zusammen decken die beiden Vorlesung die grundständige, universitäre Ausbildung im Bereich Data Science für den Bachelor Bioinformatik ab. Die Vorlesung ist ungeschnitten und du musst selber dich da durchschauen. Das ist gewollt. Zum einen nimmt es für dich die Geschwindigkeit raus und zum anderen ist das Suchen und aktive Zuhören auch wichtig für den Lernprozess. Es gibt kein Skript, du musst dir die wichtigen Dinge selber raussschreiben - das ist wiederum so gewollt.   
+
 ### Statistik für Biowissenschaften I (WiSe 2020/21)
 [Statistik für Biowissenschaften I (WiSe 2020/21)](https://www.youtube.com/playlist?list=PLe51bCp9JvEHELp0HFqtAvUQg_VSkDc9n) - _Youtube Playlist_
 

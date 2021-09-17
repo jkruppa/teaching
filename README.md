@@ -89,7 +89,7 @@ Du kannst den Code einfach in R kopieren und schauen was er macht. Achtung, leid
 
 ## Variablennamen, Klassennamen und Skalenniveau
 
-Manchmal ist es ein wenig verwirrend die Gleichheit zwischen den Worten in den verschiedenen Feldern zu sehen. Deshalb hier nochmal eine grobe Tabelle, die dir vielleicht hilft konkrete Spalten in einem Datensatz mit einem Variablennamen und einem Beispiel den Bezeichnungen/Worten in den verschiedenen Disziplienen zuzuordnen.
+Manchmal ist es ein wenig verwirrend die Gleichheit zwischen den Worten in den verschiedenen Feldern zu sehen. Deshalb hier nochmal eine grobe Tabelle, die dir vielleicht hilft konkrete Spalten in einem Datensatz mit einem Variablennamen und einem Beispiel den Bezeichnungen/Worten in den verschiedenen Disziplienen zuzuordnen. Eine Erklärung der Sachlage findest du auch in diesem Video und folgenden: [Einführung in R - Teil 06 - Zahlen, Buchstaben, Skalenniveau - Was ist das eigentlich?](https://youtu.be/OnRaSmybhOQ)
 
 Variablenname | Beispiel | R | Infomatik | Skalenniveau | Verteilungsfamilie
 --- | --- | --- | ---  | --- | ---

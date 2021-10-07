@@ -1,5 +1,8 @@
 *Die Seite ist noch im Aufbau und Sätze können im Nichts enden - sorry dafür*
 
+[foo](https://github.com/jkruppa/teaching/blob/main/Online_Vorlesung_Einstieg.md)
+
+
 # Wo ist was?
 
 - [Hilfe! Wo finde ich was?](#hilfe-wo-finde-ich-was)

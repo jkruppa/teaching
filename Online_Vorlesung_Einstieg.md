@@ -1,6 +1,6 @@
 # Vorbereitungsvideos
 
-| Mittelwerte | Mediane | Kategorien 
+| Mittelwerte | Mediane | Kategorien
 --- | --- | --- | ---  
 2 Gruppen | t-Test | u-Test | Chi-Quadrat-Test  
 | Student t-Test (Varianzen gleich) | Mann-Whitney | 

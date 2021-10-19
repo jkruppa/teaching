@@ -6,4 +6,4 @@
 | Student t-Test (Varianzen gleich) | Mann-Whitney | 
 | Welch t-Test (Varianzen gleich) | Wilcoxon | 
 --- | --- | --- | ---  
-2+ Gruppen | ANOVA | Kruskal-Wallis | ---  
+2+ Gruppen | ANOVA | Kruskal-Wallis |  

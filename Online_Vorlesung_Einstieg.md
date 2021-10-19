@@ -1,5 +1,5 @@
 # Vorbereitungsvideos
 
-sd | Mittelwerte | Mediane | Kategorien
+Vergleich | Mittelwerte | Mediane | Kategorien
 --- | --- | --- | ---  
 

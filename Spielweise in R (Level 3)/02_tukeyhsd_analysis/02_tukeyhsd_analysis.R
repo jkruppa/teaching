@@ -8,17 +8,16 @@
 pacman::p_load(tidyverse, readxl, janitor,
                emmeans, multcomp, magrittr,
                parameters, effectsize,
+               multcompView,
                conflicted)
 conflict_prefer("select", "dplyr")
 conflict_prefer("filter", "dplyr")
 conflict_prefer("extract", "magrittr")
 
 ## wir lesen immer nur ein Tabellenblatt ein
-data_tbl <- read_excel("soil_ph_data.xlsx") %>% 
+variant_tbl <- read_excel("/Users/kruppajo/Documents/GitHub/teaching/Spielweise in R (Level 3)/02_tukeyhsd_analysis/02_tukeyhsd_analysis.xlsx") %>% 
   clean_names() %>% 
-  select(-grade) %>% 
-  mutate(substrat = as_factor(substrat),
-         ph = as_factor(ph))
+  mutate(variante = as_factor(variante))
 
 ## Abbildung machen
 ggplot(data_tbl, aes(x = substrat, y = freshmatter, fill = ph)) +
@@ -37,14 +36,16 @@ fit %>%
 fit %>% 
   eta_squared()
 
-aov_fit <- aov(height ~ variante, data = soil_tbl)
+## einmal mit TukeyHDS()
+
+aov_fit <- aov(height ~ variante, data = variant_tbl)
 
 tukey_obj <- aov_fit %>% 
   TukeyHSD()
 
 tukey_obj %>% 
   pluck("variante") %>% 
-  magrittr::extract( , "p adj") %>% 
+  magrittr::extract(, "p adj") %>% 
   multcompLetters()
 
 

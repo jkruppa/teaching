@@ -9,16 +9,15 @@ pacman::p_load(tidyverse, readxl, janitor,
                emmeans, multcomp)
 
 ## wir lesen immer nur ein Tabellenblatt ein
-data_tbl <- read_excel("Plagge_Ulrike.xlsx") %>% 
+data_tbl <- read_excel("/Users/kruppajo/Documents/GitHub/teaching/Spielweise in R (Level 3)/01_soli_analysis/soil_ph_data.xlsx") %>% 
   clean_names() %>% 
   mutate(substrat = as_factor(substrat),
-         variante = as_factor(variante),
          ph = as_factor(ph))
 
-ggplot(data_tbl, aes(x = substrat, y = durchmesser, fill = ph)) +
+ggplot(data_tbl, aes(x = substrat, y = diameter, fill = ph)) +
   geom_boxplot()
 
-fit <- lm(durchmesser ~ substrat + ph + substrat:ph, data = data_tbl)
+fit <- lm(freshmatter ~ substrat + ph + substrat:ph, data = data_tbl)
 
 fit %>%  anova()
 

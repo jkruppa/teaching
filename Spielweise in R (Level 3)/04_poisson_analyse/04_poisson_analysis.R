@@ -38,11 +38,15 @@ flowers_tbl %>%
 flowers_tbl <- cutting_tbl %>% 
   select(trt, block, flower)
 
-flowers_fit <- glm(flower ~ trt + block, data = flowers_tbl, family = poisson())
+flowers_fit <- glm(flower ~ trt + block, 
+                   data = flowers_tbl, 
+                   family = poisson())
 
 flowers_fit %>% check_overdispersion()
 
-flowers_fit <- glm(flower ~ trt + block + trt:block, data = flowers_tbl, family = quasipoisson())
+flowers_fit <- glm(flower ~ trt + block + trt:block, 
+                   data = flowers_tbl, 
+                   family = quasipoisson())
 
 flowers_fit %>% 
   car::Anova() %>% 

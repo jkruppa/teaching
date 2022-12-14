@@ -48,6 +48,11 @@ flowers_fit <- glm(flower ~ trt + block + trt:block,
                    data = flowers_tbl, 
                    family = quasipoisson())
 
+r2_efron(flowers_fit)
+
+check_model(flowers_fit, 
+            check = c("qq", "outliers", "pp_check", "homogeneity")) 
+
 flowers_fit %>% 
   car::Anova() %>% 
   model_parameters()

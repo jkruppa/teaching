@@ -9,6 +9,7 @@ pacman::p_load(tidyverse, readxl, janitor,
                emmeans, multcomp, magrittr,
                parameters, effectsize,
                multcompView, see, performance,
+               broom,
                conflicted)
 conflict_prefer("select", "dplyr")
 conflict_prefer("filter", "dplyr")
@@ -39,8 +40,9 @@ family_lst <- lst(ca = gaussian(),
                   leaf = quasipoisson())
 
 glm_lst <- cutting_lst %>% 
-  map2(family_lst, ~glm(rsp ~ trt + block + trt:block, 
-           data = .x, family = .y))  
+  map2(family_lst, 
+       ~glm(rsp ~ trt + block + trt:block, 
+            data = .x, family = .y))  
   
 glm_lst %>% 
   map(pluck, "family")
@@ -60,8 +62,8 @@ emm_lst %>%
   map(~cld(.x, Letters = letters, adjust = "bonferroni")) %>% 
   map(as_tibble) %>% 
   bind_rows(.id = "outcome") %>% 
-  select(outcome, trt, .group) # %>% 
-##   print(n = 28)
+  select(outcome, trt, .group)  %>% 
+  print(n = 28)
 
 ## write_csv2()
 

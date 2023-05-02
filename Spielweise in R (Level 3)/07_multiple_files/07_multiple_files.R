@@ -9,7 +9,8 @@ pacman::p_load(tidyverse, fs)
 berry_files <- list.files("strawberry",
                           pattern = "^E", full.names = TRUE)
 
-
+read_table(berry_files[1], skip = 2, col_names = FALSE,
+           col_types = cols())
 
 berry_lst <- map(berry_files, read_table, 
                  skip = 2, col_names = FALSE, col_types = cols())
@@ -40,3 +41,9 @@ ggplot(berry_tbl, aes(wave, mean, color = E)) +
   theme_bw() +
   geom_line() +
   theme(legend.position = "none")
+
+
+
+
+
+

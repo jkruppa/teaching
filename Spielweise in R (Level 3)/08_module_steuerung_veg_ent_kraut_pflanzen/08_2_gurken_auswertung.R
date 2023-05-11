@@ -46,7 +46,6 @@ gurke_ernte_tbl %$%
                   pool.sd = TRUE, 
                   p.adjust.method = "none")
 
-
 gurke_ernte_tbl %$%
   pairwise.t.test(erntegewicht, versuchsgruppe,
                   pool.sd = TRUE, 
@@ -70,11 +69,11 @@ ggplot(stat_tbl, aes(x = versuchsgruppe, y = mean,
   labs(x = "Versuchsgruppe", y = "Erntegewicht in [g]") +
   theme(legend.position = "none") +
   annotate("text", 
-           x = 1:6, 
-           y = c(635, 635, 110, 110, 260, 260), 
-           label = c("a", "a", "b", "b", "c", "c")) +
-  annotate("text", x = 1.5, y = 700,
-           label = "ANOVA = <0.001", size = 3) +
+           x = 1:3, 
+           y = c(635, 110, 260), 
+           label = c("a", "b", "c")) +
+  annotate("text", x = 3, y = 700,
+           label = "ANOVA = <0.001", size = 5) +
   scale_fill_okabeito()
 
 ggsave("img/barplot_erntegewicht.png", 
@@ -92,8 +91,12 @@ gurke_time_length_tbl <- gurke_len_tbl %>%
 
 ggplot(gurke_time_length_tbl, aes(time_num, length, color = versuchsgruppe)) +
   geom_point() +
-  stat_summary(fun = "mean", fun.min = "min", fun.max = "max", geom = "line") 
+  stat_summary(fun = "mean", fun.min = "min", fun.max = "max", geom = "line") +
+  facet_wrap(~ versuchsgruppe)
 
+ggplot(gurke_time_length_tbl, aes(time_fct, length, color = versuchsgruppe)) +
+  geom_boxplot() +
+  facet_wrap(~ versuchsgruppe)
 
 ggplot(gurke_time_length_tbl, aes(time_num, length, color = versuchsgruppe)) +
   theme_bw() +
@@ -109,9 +112,8 @@ lm(length ~ versuchsgruppe + time + versuchsgruppe:time, gurke_time_length_tbl) 
 
 ## barplots
 
-
-
-stat_tbl <- gurke_time_tbl %>% 
+stat_tbl <- gurke_time_length_tbl %>% 
+  arrange(versuchsgruppe, time) %>% 
   group_by(versuchsgruppe, time_fct) %>% 
   summarise(mean = mean(length, na.rm = TRUE),
             sd = sd(length, na.rm = TRUE),
@@ -123,10 +125,10 @@ p1 <- ggplot(stat_tbl, aes(x = time_fct, y = mean,
   theme_bw() +
   geom_bar(stat = "identity", position = position_dodge2(preserve = "single")) +
   geom_errorbar(aes(ymin = mean-sd, ymax = mean+sd),
-                width = 0.8, position = position_dodge(0.9)) +
+                width = 0.4, position = position_dodge(0.9)) +
   labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntelänge in [cm]") +
-  annotate("text", x = 2, y = 30,
-           label = "ANOVA = <0.001", size = 3) +
+  annotate("text", x = 3, y = 30,
+           label = "ANOVA = <0.001", size = 4) +
   theme(legend.position = "top") +
   scale_fill_okabeito()
 
@@ -147,12 +149,12 @@ p2 <- ggplot(stat_t14_tbl, aes(x = time_fct, y = mean,
   theme_bw() +
   geom_bar(stat = "identity", position = position_dodge2(preserve = "single")) +
   geom_errorbar(aes(ymin = mean-sd, ymax = mean+sd),
-                width = 0.8, position = position_dodge(0.9)) +
+                width = 0.4, position = position_dodge(0.9)) +
   labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntelänge in [cm]") +
   annotate("text", 
-           x = c(0.6, 0.775, 0.95, 1.075, 1.25, 1.45), 
+           x = c(0.7, 1, 1.3), 
            y = stat_t14_tbl$cld_pos, 
-           label = c("a", "b", "bc", "c", "bc", "bc")) +
+           label = c("a", "b", "ab")) +
   theme(legend.position = "none") +
   scale_fill_okabeito()
 

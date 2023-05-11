@@ -5,24 +5,32 @@ pacman::p_load(tidyverse, readxl, parameters,
 conflicts_prefer(dplyr::select)
 conflicts_prefer(dplyr::filter)
 
-gurke_tbl <- read_excel("wachstum_gurke.xlsx") %>% 
+## data preprocessing
+
+gurke_raw_tbl <- read_excel("wachstum_gurke.xlsx") %>% 
   clean_names() %>% 
   mutate(versuchsgruppe = as_factor(versuchsgruppe),
          erntegewicht = ifelse(erntegewicht == 0, yes = NA, no = erntegewicht))
 
-gurke_ernte_tbl <- gurke_tbl %>% 
-  filter(versuchsgruppe != "Tageslänge") 
+gurke_len_tbl <- gurke_raw_tbl %>% 
+  filter(str_detect(versuchsgruppe, "L$")) %>% 
+  mutate(versuchsgruppe = factor(versuchsgruppe, 
+                                 labels = c("Proloog", "Quarto", "Katrina")))
 
-## Ist das Outcome annährend normalverteilt
-## -> ja, ANOVA
-## -> nein, Sie unten
+gurke_dia_tbl <- gurke_raw_tbl %>% 
+  filter(str_detect(versuchsgruppe, "D$")) %>% 
+  mutate(versuchsgruppe = factor(versuchsgruppe, 
+                                 labels = c("Proloog", "Quarto", "Katrina")))
+
+gurke_ernte_tbl <- gurke_len_tbl %>% 
+  select(versuchsgruppe, erntegewicht)
+
+## erntegewicht
+
 
 ggplot(gurke_ernte_tbl, aes(versuchsgruppe, erntegewicht)) +
   theme_bw() +
   geom_point()
-
-## Wir nehmen an, dass es sich bei Frischmasse um einen annährend
-## normalverteilten Endpunkt handelt.
 
 fit <- lm(erntegewicht ~ versuchsgruppe, data = gurke_ernte_tbl)
 
@@ -33,7 +41,6 @@ fit %>%
 fit %>% 
   eta_squared()
 
-## posthoc Test durchführen. 
 gurke_ernte_tbl %$%
   pairwise.t.test(erntegewicht, versuchsgruppe,
                   pool.sd = TRUE, 
@@ -47,9 +54,6 @@ gurke_ernte_tbl %$%
   extract2("p.value") %>% 
   fullPTable() %>% 
   multcompLetters()
-
-
-## Barplot mit compact letter display und abspeichern
 
 stat_tbl <- gurke_ernte_tbl %>% 
   group_by(versuchsgruppe) %>% 
@@ -78,37 +82,20 @@ ggsave("img/barplot_erntegewicht.png",
 
 ## Zeitpunkte
 
-gurke_time_tbl <- gurke_tbl %>% 
-  filter(versuchsgruppe != "Tageslänge") %>% 
+gurke_time_length_tbl <- gurke_len_tbl %>% 
   select(-pfl, -erntegewicht) %>% 
   pivot_longer(cols = t1:t17,
-               values_to = "gewicht",
+               values_to = "length",
                names_to = "time") %>% 
   mutate(time_fct = as_factor(time),
          time_num = as.numeric(time_fct))
 
-ggplot(gurke_time_tbl, aes(time_num, gewicht, color = versuchsgruppe)) +
+ggplot(gurke_time_length_tbl, aes(time_num, length, color = versuchsgruppe)) +
   geom_point() +
   stat_summary(fun = "mean", fun.min = "min", fun.max = "max", geom = "line") 
 
 
-gurke_time_tbl <- gurke_tbl %>% 
-  filter(versuchsgruppe != "Tageslänge") %>% 
-  select(-pfl, -erntegewicht) %>% 
-  pivot_longer(cols = t1:t17,
-               values_to = "gewicht",
-               names_to = "time") %>% 
-  mutate(time_fct = as_factor(time),
-         time_num = as.numeric(time_fct),
-         gewicht = ifelse(gewicht == 0, yes = NA, no = gewicht)) #%>% 
-  #filter(versuchsgruppe == "Proloog L")
-
-ggplot(gurke_time_tbl, aes(time_num, gewicht, color = versuchsgruppe)) +
-  geom_point() +
-  stat_summary(fun = "mean", fun.min = "min", fun.max = "max", geom = "line") 
-
-
-ggplot(gurke_time_tbl, aes(time_num, gewicht, color = versuchsgruppe)) +
+ggplot(gurke_time_length_tbl, aes(time_num, length, color = versuchsgruppe)) +
   theme_bw() +
   geom_jitter(position=position_dodge(0.3), shape = 4) +
   stat_summary(fun.data="mean_sdl", , fun.args = list(mult = 1), 
@@ -117,24 +104,17 @@ ggplot(gurke_time_tbl, aes(time_num, gewicht, color = versuchsgruppe)) +
                position=position_dodge(0.3)) 
 
 
-lm(gewicht ~ versuchsgruppe + time + versuchsgruppe:time, gurke_time_tbl) %>% 
+lm(length ~ versuchsgruppe + time + versuchsgruppe:time, gurke_time_length_tbl) %>% 
   anova()
 
 ## barplots
 
-gurke_time_tbl %>% 
-  filter(time_fct == "t14") %$%
-  pairwise.t.test(gewicht, versuchsgruppe,
-                  pool.sd = FALSE, 
-                  p.adjust.method = "bonferroni") %>% 
-  extract2("p.value") %>% 
-  fullPTable() %>% 
-  multcompLetters()
+
 
 stat_tbl <- gurke_time_tbl %>% 
   group_by(versuchsgruppe, time_fct) %>% 
-  summarise(mean = mean(gewicht, na.rm = TRUE),
-            sd = sd(gewicht, na.rm = TRUE),
+  summarise(mean = mean(length, na.rm = TRUE),
+            sd = sd(length, na.rm = TRUE),
             se = sd/sqrt(n()),
             cld_pos = mean + sd + 2)
 
@@ -144,7 +124,7 @@ p1 <- ggplot(stat_tbl, aes(x = time_fct, y = mean,
   geom_bar(stat = "identity", position = position_dodge2(preserve = "single")) +
   geom_errorbar(aes(ymin = mean-sd, ymax = mean+sd),
                 width = 0.8, position = position_dodge(0.9)) +
-  labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntegewicht in [g]") +
+  labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntelänge in [cm]") +
   annotate("text", x = 2, y = 30,
            label = "ANOVA = <0.001", size = 3) +
   theme(legend.position = "top") +
@@ -153,13 +133,22 @@ p1 <- ggplot(stat_tbl, aes(x = time_fct, y = mean,
 stat_t14_tbl <- stat_tbl %>% 
   filter(time_fct == "t14")
 
+gurke_time_length_tbl %>% 
+  filter(time_fct == "t14") %$%
+  pairwise.t.test(length, versuchsgruppe,
+                  pool.sd = FALSE, 
+                  p.adjust.method = "none") %>% 
+  extract2("p.value") %>% 
+  fullPTable() %>% 
+  multcompLetters()
+
 p2 <- ggplot(stat_t14_tbl, aes(x = time_fct, y = mean, 
                        fill = versuchsgruppe)) + 
   theme_bw() +
   geom_bar(stat = "identity", position = position_dodge2(preserve = "single")) +
   geom_errorbar(aes(ymin = mean-sd, ymax = mean+sd),
                 width = 0.8, position = position_dodge(0.9)) +
-  labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntegewicht in [g]") +
+  labs(x = "Zeitpunkt", fill = "Versuchsgruppe", y = "Erntelänge in [cm]") +
   annotate("text", 
            x = c(0.6, 0.775, 0.95, 1.075, 1.25, 1.45), 
            y = stat_t14_tbl$cld_pos, 

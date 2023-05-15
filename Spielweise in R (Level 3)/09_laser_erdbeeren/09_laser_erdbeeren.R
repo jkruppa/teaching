@@ -13,13 +13,8 @@ conflicts_prefer(dplyr::mutate)
 conflicts_prefer(magrittr::set_names)
 
 ## laden der spektren
-berry_files <- list.files("C:/Users/jokruppa/work/consulting/Mansfeld_Niklas/Erdbeeren",
+berry_files <- list.files("strawberry",
                           pattern = "^E", full.names = TRUE)
-
-
-
-berry_lst <- map(berry_files, read_table, 
-                 skip = 2, col_names = FALSE, col_types = cols())
 
 berry_lst <- map(berry_files, function(x){
   tmp_tbl <- read_table(x, 
@@ -50,7 +45,7 @@ ggplot(berry_tbl, aes(wave, mean, color = E)) +
 
 ## laden des zuckergehalts
 
-sugar_tbl <- read_excel("Zucker Erdbeeren 2.05.23.xlsx") %>% 
+sugar_tbl <- read_excel("strawberry_sugar.xlsx") %>% 
   clean_names() %>% 
   select(-brixwert, -brix_mittel_note, -messwiederholung,
          -g_zucker_l_saft_mittel_note, -oe_einzelfrucht) %>% 
@@ -60,7 +55,7 @@ sugar_tbl <- read_excel("Zucker Erdbeeren 2.05.23.xlsx") %>%
 ## beide Datensätze zusammen
 berry_sugar_tbl <- left_join(berry_tbl, sugar_tbl,
                              by = c("E" = "E")) %>% 
-  #filter(boniturnote %in% c(1, 5)) %>% 
+  # filter(boniturnote %in% c(1, 5)) %>% 
   mutate(boniturnote = as_factor(boniturnote))
 
 
@@ -69,7 +64,7 @@ wave_vec <- berry_sugar_tbl %>% pull(wave) %>% unique()
 length(wave_vec)
 
 berry_sugar_tbl %>% 
-  filter(wave == 841) %>% 
+  filter(wave == 400) %>% 
   ggplot(aes(x = mean, y = g_zucker_l_saft, color = boniturnote)) +
   theme_bw() +
   geom_point() +
@@ -77,12 +72,12 @@ berry_sugar_tbl %>%
  # facet_wrap(~ wave)
 
 berry_sugar_tbl %>% 
-  filter(wave == 231) %>% 
-  ggplot(aes(x = brix_einzelfrucht, y = mean)) +
+  filter(wave %in% c(231, 500)) %>% 
+  ggplot(aes(x = mean, y = g_zucker_l_saft, color = boniturnote)) +
   theme_bw() +
   geom_point() +
   stat_smooth(method = "lm", se = FALSE) +
-  facet_wrap(~ wave)
+  facet_wrap(~ wave, scales = "free_x")
 
 berry_sugar_tbl %>% 
   filter(wave == 231) %$% 
@@ -109,9 +104,13 @@ berry_sugar_tbl %>%
   ggplot(aes(x = mean, y = brix_einzelfrucht,
              color = boniturnote)) +
   theme_bw() +
-  geom_point() +
+  # geom_point() +
   geom_text(aes(label = E)) +
   stat_smooth(method = "lm", se = FALSE) +
   facet_wrap(~ wave)
+
+
+
+
 
 

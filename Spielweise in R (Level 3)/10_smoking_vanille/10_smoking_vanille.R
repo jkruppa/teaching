@@ -77,6 +77,7 @@ ggplot(rauch_long_tbl, aes(tag, gekeimt, color = trt)) +
   annotate("text", x = c(31) + 0.3,
            y = c(6, 2, 13, 8) + 0.6, label = c("ab", "a", "b", "ab"), hjust = 0,
            size = 5) +
-  scale_color_okabeito()
+  scale_color_okabeito() +
+  theme(legend.position = "top")
 
 

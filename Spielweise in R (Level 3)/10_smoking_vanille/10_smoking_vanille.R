@@ -7,14 +7,14 @@
 pacman::p_load(tidyverse, janitor, fs,
                reshape2, broom, readxl,
                scales, multcompView, multcomp,
-               rcompanion, see)
+               rcompanion, see, conflicted)
+conflicts_prefer(dplyr::select)
 
-
-rauch_tbl <- read_excel("/Users/kruppajo/Documents/GitHub/teaching/Spielweise in R (Level 3)/10_smoking_vanille/smoking_vanille.xlsx",
+rauch_tbl <- read_excel("smoking_vanille.xlsx",
                         sheet = 1) %>% 
   clean_names() 
 
-rauch_long_tbl <- rauch_2_tbl %>% 
+rauch_long_tbl <- rauch_tbl %>% 
   pivot_longer(rauch_1:kontrolle,
                values_to = "gekeimt",
                names_to = "trt") %>% 
@@ -22,7 +22,7 @@ rauch_long_tbl <- rauch_2_tbl %>%
          gekeimt_perc = gekeimt/30) %>% 
   filter(tag < 34)
 
-ggplot(rauch_long_tbl, aes(tag, gekeimt, color = trt)) +
+ggplot(rauch_long_tbl, aes(tag, gekeimt_perc, color = trt)) +
   theme_bw() +
   geom_point() +
   geom_line() +
@@ -43,13 +43,17 @@ time_tbl <- rauch_long_tbl %>%
 acast(time_tbl, trt ~ tag, value.var = "gekeimt") %>% 
   chisq.test(correct = FALSE)
 
+acast(time_tbl, trt ~ tag, value.var = "gekeimt") %>% 
+  fisher.test()
+
 prop.test(c(6, 2, 13, 8), c(30, 30, 30, 30))
 
 acast(time_tbl, tag ~ trt, value.var = "gekeimt") %>% 
   asplit(1) %>% 
-  map(~prop.test(.x, n = c(30, 30, 30, 30))) %>% 
+  map(~prop.test(x = .x, n = c(30, 30, 30, 30))) %>% 
   map_dfr(tidy, .id = "tag") %>% 
-  mutate(p.value = pvalue(p.value))
+  mutate(p.value = pvalue(p.value)) %>% 
+  select(tag, p.value)
   
 
 pairwise.prop.test(c(rauch_1 = 6, 

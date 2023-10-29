@@ -1,0 +1,67 @@
+---
+title: "Einführung in R Quarto"
+author: "Jochen Kruppa"
+format:
+  html:
+    embed-resources: true
+lang: de
+theme: cosmo
+---
+
+```{r}
+#| echo: false
+pacman::p_load(tidyverse, readxl, fs, kableExtra,
+               parameters)
+```
+
+# Mein tolles Projekt
+
+-   Erster Punkt
+-   Zweiter Punkt
+
+## Mathe und Formeln
+
+$$
+T = \cfrac{\bar{x_1} - \bar{x_2}}{s_p \cdot \sqrt{n_g}}
+$$
+
+## Explorative Datennanalyse
+
+Im Folgenden machen wir einmal einen Boxplot von Daten. Siehe @tbl-data-01
+
+```{r}
+#| echo: false
+#| label: tbl-data-01
+#| tbl-cap: "Example"
+data_tbl <- read_excel(file.path(path_home(),
+                                 "Desktop/light_intensity_data .xlsx")) %>% 
+  mutate(growth = as.numeric(growth),                                               light_intensity = as_factor(light_intensity))
+
+data_tbl %>% kable()
+```
+
+## ANOVA
+
+```{r}
+#| echo: false
+fit <- lm(growth ~ light_intensity + rack + light_intensity:rack,
+          data = data_tbl)
+
+fit %>% anova %>% parameters() %>% kable()
+```
+
+## Abbildungen
+
+@fig-light-01
+
+```{r}
+#| warning: false
+#| echo: false
+#| fig-cap: "Meine Boxplots für die Lichtintensität."
+#| label: fig-light-01
+#| fig-height: 5 
+#| fig-width: 5
+ggplot(data_tbl, aes(x = light_intensity, y = growth)) +
+  theme_minimal() +
+  geom_boxplot()
+```

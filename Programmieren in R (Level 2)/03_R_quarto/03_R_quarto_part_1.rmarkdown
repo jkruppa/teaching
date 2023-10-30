@@ -14,6 +14,7 @@ pacman::p_load(tidyverse, readxl, fs, kableExtra,
                parameters)
 ```
 
+
 # Mein tolles Projekt
 
 -   Erster Punkt
@@ -29,6 +30,7 @@ $$
 
 Im Folgenden machen wir einmal einen Boxplot von Daten. Siehe @tbl-data-01
 
+
 ```{r}
 #| echo: false
 #| label: tbl-data-01
@@ -39,7 +41,9 @@ data_tbl <- read_excel("light_intensity_data.xlsx") %>%
 data_tbl %>% kable()
 ```
 
+
 ## ANOVA
+
 
 ```{r}
 #| echo: true
@@ -49,9 +53,11 @@ fit <- lm(growth ~ light_intensity + rack + light_intensity:rack,
 fit %>% anova %>% parameters() %>% kable()
 ```
 
+
 ## Abbildungen
 
 @fig-light-01
+
 
 ```{r}
 #| warning: false
@@ -65,3 +71,4 @@ ggplot(data_tbl, aes(x = as_factor(light_intensity), y = growth)) +
   theme_minimal() +
   geom_boxplot()
 ```
+

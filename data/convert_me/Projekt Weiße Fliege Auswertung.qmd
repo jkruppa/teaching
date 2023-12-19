@@ -1,0 +1,58 @@
+---
+title: "Projekt Auswertung"
+format: html
+editor: visual
+---
+
+```{r}
+pacman::p_load(tidyverse, magrittr, readxl, conflicted, ggmosaic, janitor, see, patchwork, latex2exp, tinytex)
+```
+
+```{r}
+whitefly_tbl <-read_excel("auswertung R.xlsx") %>%
+  mutate(trt = factor(trt, 
+                      levels = c("1", "2", "3", "4", "5"), 
+                      labels = c("Kontrolle", "Sivanto Prime", "Naturalis", "Neem-Azal", "Encarsia")),
+         wdh = as_factor(wdh))
+```
+
+```{r}
+stat_all_tbl <- whitefly_tbl %>% 
+  group_by(trt) %>% 
+  summarise(mean = mean(anzahl),
+            sd = sd(anzahl))
+stat_all_tbl
+```
+
+```{r}
+ggplot(data = stat_all_tbl, aes(x = trt, y = mean/6,
+                                fill = trt)) +
+  theme_bw() +
+  geom_bar(stat = "identity", position = position_dodge(0.5)) + 
+  geom_errorbar(aes(ymin = mean/6-sd/6, ymax = mean/6+sd/6), 
+                width = 0.2, position = position_dodge(0.9)) +
+  labs(x = "Behandlung", 
+       y = "Mittlere Anzahl weißer Fliegen pro Käfig (a 6 Pflanzen)") +
+  scale_fill_material() +
+  theme(legend.position = "none") +
+          #"right",
+      #  legend.box.background = element_rect(color = "black"),
+      #  legend.box.margin = margin(t = 1, l = 1),
+      #  legend.text.align = 0)
+  annotate("text", x = c(1, 2, 3, 4, 5, 2.2), y = c(50, 20, 45, 10, 35, 12.5),
+           label = c(sd,
+                     sd,
+                     sd,
+                     sd,
+                     sd,
+                     "SD"))
+
+```
+
+```{r}
+ggplot(data = whitefly_tbl, aes(x = trt, y = anzahl, fill = trt)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.25, shape = 1) +
+  theme_bw() +
+  labs(x = "Behandlung", y = "Mittlere Anzahl weißer Fliegen pro Pflanze") 
+```

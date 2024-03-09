@@ -6,4 +6,19 @@ date: "12. June 2024"
 format:
   revealjs: 
     theme: simple
+    embed-resources: true
 ---
+
+## My God, it's full of stars...
+
+![](img/oh_god_stars.png)
+
+## Null ritual
+
+![](img/null_ritual.jpg){fig-align="center" width=65%}
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Next

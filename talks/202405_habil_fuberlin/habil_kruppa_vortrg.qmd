@@ -2,7 +2,7 @@
 title: "A world beyond p<0.05"
 subtitle: "Why hang on to frequentist statistics and not switch to Bayesian statistics?"
 author: "Prof. Dr. Jochen Kruppa-Scheetz"
-date: "12. June 2024"
+date: "13. May 2024"
 format:
   revealjs: 
     logo: logo_osna.png

@@ -1,0 +1,80 @@
+---
+title: "Statistical Analysis of Methylation Data"
+subtitle: ""
+author: "Prof. Dr. Jochen Kruppa-Scheetz"
+date: "13. May 2024"
+format:
+  revealjs: 
+    logo: logo_osna.png
+    css: logo.css
+    preview-links: auto
+    footer: "[Openbook Bio Data Science | The definitive guide](https://jkruppa.github.io/)"
+    theme: simple
+    slide-number: c/t
+    chalkboard: 
+      theme: whiteboard
+---
+
+## Why methylation analysis?
+
+- Methylation is a crucial epigenetic modification that **regulates** gene expression without altering the DNA sequence.
+
+- Abnormal methylation patterns are associated with numerous **diseases**, including cancer, autoimmune diseases, and neurological disorders.
+
+-  In **cancer**, certain genes become abnormally methylated, leading to oncogene activation or tumor suppressor gene silencing.
+
+## Why methylation analysis?
+
+- Methylation plays a key in **development** by controlling the expression of genes critical for cell differentiation and organ formation. 
+
+-  Methylation patterns change with **age** and in response to environmental factors, such as diet, toxins, and stress.
+
+-  As methylation can be influenced by genetic and environmental factors, its analysis is essential for **personalized medicine**. 
+
+## Dutch famine of 1944–1945 
+
+![](img/hongerwinter.jpg){fig-align="center" width=80%}
+
+## Dutch famine of 1944–1945
+
+- Food caloric intake for many Dutch people dropped to fewer than 1000 calories per day. 
+- Provided strong evidence for the concept of "fetal programming". 
+- Changes in methylation patterns have been implicated in subsequent health outcomes. 
+- Findings suggest that severe malnutrition during critical periods of development can lead to epigenetic marks that persist throughout life.
+
+
+## Landscape of methylation
+
+![](img/DNAme_landscape.png){fig-align="center" width=100%}
+
+## Landscape of methylation in development
+
+![](img/DNA_methylation_reprogramming.png){fig-align="center" width=100%}
+
+## How can I help?
+
+![](img/mr-dna.png){fig-align="center" width=50%}
+
+- Differential analysis
+- Prediction model
+
+## Data
+
+## My God, it's full of stars...
+
+![](img/oh_god_stars.png){fig-align="center" width=100%}
+
+
+
+
+## References {.smaller}
+
+- Kruppa, J. *et al.* (2021). Estimands in epigenome-wide association studies. Clinical epigenetics, 13(1), 98.
+
+## Sources {.smaller}
+
+- [A cross-package Bioconductor workflow for analysing methylation array data](https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html)
+
+
+
+

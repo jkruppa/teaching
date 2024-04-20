@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="habil_kruppa_2024_files/libs/clipboard/clipboard.min.js"></script>
-<script src="habil_kruppa_2024_files/libs/quarto-html/tabby.min.js"></script>
-<script src="habil_kruppa_2024_files/libs/quarto-html/popper.min.js"></script>
-<script src="habil_kruppa_2024_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="habil_kruppa_2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="habil_kruppa_2024_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="habil_kruppa_2024_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="habil_kruppa_2024_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="habil_kruppa_lehrprobe_files/libs/clipboard/clipboard.min.js"></script>
+<script src="habil_kruppa_lehrprobe_files/libs/quarto-html/tabby.min.js"></script>
+<script src="habil_kruppa_lehrprobe_files/libs/quarto-html/popper.min.js"></script>
+<script src="habil_kruppa_lehrprobe_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="habil_kruppa_lehrprobe_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="habil_kruppa_lehrprobe_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="habil_kruppa_lehrprobe_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="habil_kruppa_lehrprobe_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.552">
 
   <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz">
-  <meta name="dcterms.date" content="2024-06-12">
-  <title>A world beyond p&lt;0.05</title>
+  <meta name="dcterms.date" content="2024-05-13">
+  <title>Statistical Analysis of Methylation Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="habil_kruppa_2024_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="habil_kruppa_2024_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="habil_kruppa_lehrprobe_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="habil_kruppa_lehrprobe_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,14 +31,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="habil_kruppa_2024_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="habil_kruppa_lehrprobe_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="logo.css">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="habil_kruppa_2024_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -330,8 +330,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">A world beyond p&lt;0.05</h1>
-  <p class="subtitle">Why hang on to frequentist statistics and not switch to Bayesian statistics?</p>
+  <h1 class="title">Statistical Analysis of Methylation Data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -341,38 +340,70 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 </div>
 </div>
 
-  <p class="date">2024-06-12</p>
+  <p class="date">2024-05-13</p>
+</section>
+<section id="why-methylation-analysis" class="slide level2">
+<h2>Why methylation analysis?</h2>
+<ul>
+<li><p>Methylation is a crucial epigenetic modification that <strong>regulates</strong> gene expression without altering the DNA sequence.</p></li>
+<li><p>Abnormal methylation patterns are associated with numerous <strong>diseases</strong>, including cancer, autoimmune diseases, and neurological disorders.</p></li>
+<li><p>In <strong>cancer</strong>, certain genes become abnormally methylated, leading to oncogene activation or tumor suppressor gene silencing.</p></li>
+</ul>
+</section>
+<section id="why-methylation-analysis-1" class="slide level2">
+<h2>Why methylation analysis?</h2>
+<ul>
+<li><p>Methylation plays a key in <strong>development</strong> by controlling the expression of genes critical for cell differentiation and organ formation.</p></li>
+<li><p>Methylation patterns change with <strong>age</strong> and in response to environmental factors, such as diet, toxins, and stress.</p></li>
+<li><p>As methylation can be influenced by genetic and environmental factors, its analysis is essential for <strong>personalized medicine</strong>.</p></li>
+</ul>
+</section>
+<section id="dutch-famine-of-19441945" class="slide level2">
+<h2>Dutch famine of 1944–1945</h2>
+
+<img data-src="img/hongerwinter.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="dutch-famine-of-19441945-1" class="slide level2">
+<h2>Dutch famine of 1944–1945</h2>
+<ul>
+<li>Food caloric intake for many Dutch people dropped to fewer than 1000 calories per day.</li>
+<li>Provided strong evidence for the concept of “fetal programming”.</li>
+<li>Changes in methylation patterns have been implicated in subsequent health outcomes.</li>
+<li>Findings suggest that severe malnutrition during critical periods of development can lead to epigenetic marks that persist throughout life.</li>
+</ul>
+</section>
+<section id="landscape-of-methylation" class="slide level2">
+<h2>Landscape of methylation</h2>
+
+<img data-src="img/DNAme_landscape.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="landscape-of-methylation-in-development" class="slide level2">
+<h2>Landscape of methylation in development</h2>
+
+<img data-src="img/DNA_methylation_reprogramming.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="how-can-i-help" class="slide level2">
+<h2>How can I help?</h2>
+
+<img data-src="img/mr-dna.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><ul>
+<li>Differential analysis</li>
+<li>Prediction model</li>
+</ul>
+</section>
+<section id="data" class="slide level2">
+<h2>Data</h2>
 </section>
 <section id="my-god-its-full-of-stars" class="slide level2">
 <h2>My God, it’s full of stars…</h2>
 
 <img data-src="img/oh_god_stars.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="null-ritual" class="slide level2">
-<h2>Null ritual</h2>
-
-<img data-src="img/null_ritual.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"></section>
-<section id="human-computers" class="slide level2">
-<h2>Human Computers</h2>
-
-<img data-src="img/eda-preface-01.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"></section>
-<section id="the-formula" class="slide level2">
-<h2>The formula</h2>
-<p><span class="math display">\[
-T_{calc} = \cfrac{\bar{y}_1 - \bar{y}_2}{s_p \cdot \sqrt{\tfrac{2}{n_g}}}
-\]</span></p>
-<p><span class="math display">\[
-T_{calc} \approx \cfrac{\Delta \cdot n}{s}
-\]</span></p>
-</section>
-<section id="the-distribution" class="slide level2">
-<h2>The distribution</h2>
-
-<img data-src="habil_kruppa_2024_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="references" class="slide level2 smaller">
 <h2>References</h2>
 <ul>
-<li>Gigerenzer, G. (2004). The null ritual. The Sage handbook of quantitative methodology for the social sciences, 391-408.</li>
-<li>Wasserstein, R. L. (2019). Moving to a world beyond “p&lt; 0.05”. The American Statistician, 73(sup1), 1-19.</li>
+<li>Kruppa, J. <em>et al.</em> (2021). Estimands in epigenome-wide association studies. Clinical epigenetics, 13(1), 98.</li>
+</ul>
+</section>
+<section id="sources" class="slide level2 smaller">
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html">A cross-package Bioconductor workflow for analysing methylation array data</a></li>
 </ul>
 <div class="quarto-auto-generated-content">
 <p><img src="logo_osna.png" class="slide-logo"></p>
@@ -385,20 +416,20 @@ T_{calc} \approx \cfrac{\Delta \cdot n}{s}
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="habil_kruppa_2024_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="habil_kruppa_lehrprobe_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -593,44 +624,6 @@ T_{calc} \approx \cfrac{\Delta \cdot n}{s}
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

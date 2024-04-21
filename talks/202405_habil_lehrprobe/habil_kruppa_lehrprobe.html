@@ -389,21 +389,39 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
+<p>Microarray-based methods</p>
+<ul>
+<li>Illumina HumanMethylation450 (450k)</li>
+<li>Illumina Infinium MethylationEPIC BeadChip targets over 850,000 CpG sites</li>
+</ul>
+<p>High-throughput sequencing</p>
+<ul>
+<li>Bisulfite sequencing (BS-Seq) data</li>
+</ul>
 </section>
-<section id="my-god-its-full-of-stars" class="slide level2">
-<h2>My God, it’s full of stars…</h2>
-
-<img data-src="img/oh_god_stars.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="illumina-array" class="slide level2">
+<h2>Illumina array</h2>
+<ul>
+<li>a methylated intensity (denoted by M) and an unmethylated intensity (denoted by U)</li>
+<li><span class="math inline">\(\beta\mbox{-values} = \cfrac{M}{M+U}\)</span></li>
+<li><span class="math inline">\(\mbox{M-values} = log2\left(\cfrac{M}{U}\right)\)</span></li>
+</ul>
+</section>
 <section id="references" class="slide level2 smaller">
 <h2>References</h2>
 <ul>
 <li>Kruppa, J. <em>et al.</em> (2021). Estimands in epigenome-wide association studies. Clinical epigenetics, 13(1), 98.</li>
+<li>Maksimovic, J. <em>et al.</em> (2016). A cross-package Bioconductor workflow for analysing methylation array data. F1000Research, 5.</li>
+<li>Krueger, F. <em>et al.</em> (2011). Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. bioinformatics, 27(11), 1571-1572.</li>
+<li>Aryee, M. J. <em>et al.</em> (2014). Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics, 30(10), 1363-1369.</li>
 </ul>
 </section>
 <section id="sources" class="slide level2 smaller">
 <h2>Sources</h2>
 <ul>
 <li><a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html">A cross-package Bioconductor workflow for analysing methylation array data</a></li>
+<li><a href="https://www.bioinformatics.babraham.ac.uk/projects/bismark/">Bismark</a></li>
+<li><a href="https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html">The minfi User’s Guide</a></li>
 </ul>
 <div class="quarto-auto-generated-content">
 <p><img src="logo_osna.png" class="slide-logo"></p>

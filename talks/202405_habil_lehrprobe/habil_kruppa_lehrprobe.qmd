@@ -60,20 +60,34 @@ format:
 
 ## Data
 
-## My God, it's full of stars...
+Microarray-based methods
 
-![](img/oh_god_stars.png){fig-align="center" width=100%}
+- Illumina HumanMethylation450 (450k) 
+- Illumina Infinium MethylationEPIC BeadChip targets over 850,000 CpG sites
 
+High-throughput sequencing
 
+- Bisulfite sequencing (BS-Seq) data
+
+## Illumina array
+
+- a methylated intensity (denoted by M) and an unmethylated intensity (denoted by U)
+- $\beta\mbox{-values} = \cfrac{M}{M+U}$
+- $\mbox{M-values} = log2\left(\cfrac{M}{U}\right)$
 
 
 ## References {.smaller}
 
 - Kruppa, J. *et al.* (2021). Estimands in epigenome-wide association studies. Clinical epigenetics, 13(1), 98.
+- Maksimovic, J. *et al.* (2016). A cross-package Bioconductor workflow for analysing methylation array data. F1000Research, 5.
+- Krueger, F. *et al.* (2011). Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. bioinformatics, 27(11), 1571-1572.
+- Aryee, M. J. *et al.* (2014). Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics, 30(10), 1363-1369.
 
 ## Sources {.smaller}
 
 - [A cross-package Bioconductor workflow for analysing methylation array data](https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html)
+- [Bismark](https://www.bioinformatics.babraham.ac.uk/projects/bismark/)
+- [The minfi User’s Guide](https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html)
 
 
 

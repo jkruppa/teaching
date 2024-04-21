@@ -1,0 +1,120 @@
+---
+title: "A world beyond p<0.05"
+subtitle: "Why hang on to frequentist statistics and not switch to Bayesian statistics?"
+author: "Prof. Dr. Jochen Kruppa-Scheetz"
+date: "13. May 2024"
+format:
+  revealjs: 
+    logo: logo_osna.png
+    css: logo.css
+    preview-links: auto
+    footer: "[Openbook Bio Data Science | The definitive guide](https://jkruppa.github.io/)"
+    theme: simple
+    slide-number: c/t
+    chalkboard: 
+      theme: whiteboard
+---
+
+## My God, it's full of stars...
+
+![](img/oh_god_stars.png){fig-align="center" width=100%}
+
+
+# A world before p<0.05
+
+## [William Herschel](https://en.wikipedia.org/wiki/William_Herschel) and [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley)
+
+::: {layout-ncol=2}
+
+![*First observed Uranus on 13 March 1781 with selfmade telescope*](img/herschelold.jpg){fig-align="center" width=65%}
+
+![*Funder and publisher of Isaac Newton. Predicted Halley's Comet orbit.*](img/halleyold.jpg){fig-align="center" width=65%}
+:::
+
+## The Habitable Sun 
+
+![](img/herschel_01.png){fig-align="center" width=100%}
+
+## The Habitable Sun
+
+![](img/herschel_02.png){fig-align="center" width=100%}
+
+## [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley) and [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)
+
+::: {layout-ncol=2}
+
+![](img/halleyold.jpg){fig-align="center" width=75%}
+
+![](img/newtonyoung.jpg){fig-align="center" width=75%}
+:::
+
+## Hollow Earth of Halley
+
+![](img/hohlerde.png){fig-align="center" height=90%}
+
+# A world waiting for p<0.05 
+
+## [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)
+
+![*"A genius who almost single-handedly created the foundations for modern statistical science"*](img/fischeryoung.jpeg){fig-align="center" width=30%}
+
+::: aside
+Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962)
+:::
+
+
+## [Rothamsted Experimental Station](https://www.adelaide.edu.au/library/special/exhibitions/significant-life-fisher/rothamsted/)
+
+![](img/rothamsted.jpg){fig-align="center" width=100%}
+
+## Latin Square
+
+![](img/latinsquare.png){fig-align="center" width=100%}
+
+
+
+
+## Null ritual
+
+![](img/null_ritual.jpg){fig-align="center" width=65%}
+
+
+
+
+## Human Computers
+
+![](img/eda-preface-01.jpg){fig-align="center" width=65%}
+
+## The formula
+
+$$
+T_{calc} = \cfrac{\bar{y}_1 - \bar{y}_2}{s_p \cdot \sqrt{\tfrac{2}{n_g}}} 
+$$
+
+$$
+T_{calc} \approx \cfrac{\Delta \cdot n}{s} 
+$$
+
+## The distribution
+
+```{r}
+pacman::p_load(tidyverse)
+ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
+  stat_function(fun = dt, args = list(df = 2), size = 3) +
+  theme_minimal() +
+  labs(x = "", y = "") +
+  scale_x_continuous(breaks = c(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5)) +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank())
+```
+
+
+
+
+## References {.smaller}
+
+- Gigerenzer, G. *et al.* (2004). The null ritual. The Sage handbook of quantitative methodology for the social sciences, 391-408.
+- Wasserstein, R. L. *et al.* (2019). Moving to a world beyond "p< 0.05". The American Statistician, 73(sup1), 1-19.
+- Kawaler, S. *et al.* (1981). The Habitable Sun-One of Herschel, William's Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.
+
+

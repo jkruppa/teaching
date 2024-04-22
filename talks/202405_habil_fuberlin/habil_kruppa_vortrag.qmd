@@ -19,10 +19,12 @@ format:
 
 ![](img/oh_god_stars.png){fig-align="center" width=100%}
 
-::: aside
-"To understand a science, you have to know its history" --- Auguste Comte
-:::
+. . .
 
+> "To understand a science, you have to know its history" --- Auguste Comte
+
+
+# If statistics were invented today, the standard approach would be...?
 
 # A world before p<0.05
 
@@ -69,7 +71,7 @@ Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee
 
 ## [Rothamsted Experimental Station](https://www.adelaide.edu.au/library/special/exhibitions/significant-life-fisher/rothamsted/)
 
-![](img/rothamsted.jpg){fig-align="center" width=100%}
+![](img/rothamsted.jpg){fig-align="center" width=60%}
 
 ## Latin Square
 
@@ -94,6 +96,23 @@ Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee
 
 # $\boldsymbol{Pr(D|H_0)}$ 
 
+## How to get the p-value --- a journey
+
+```{r}
+pacman::p_load(tidyverse)
+ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
+  stat_function(fun = dt, args = list(df = 2), size = 3) +
+  theme_void() +
+  labs(x = "", y = "") +
+  scale_x_continuous(breaks = c(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5)) +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank())
+```
+
+## How to get the p-value --- a journey
+
+
+# Why so confusing?
 
 ## [Jerzy Neyman](https://en.wikipedia.org/wiki/Jerzy_Neyman) and [Egon Pearson](https://de.wikipedia.org/wiki/Egon_Pearson)
 
@@ -105,46 +124,42 @@ Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee
 :::
 
 
-## Null ritual
+## The null ritual
 
 ![](img/null_ritual.jpg){fig-align="center" width=70%}
 
+# Again --- why?
 
+## The formula
 
+$$
+T_{D} = \cfrac{\bar{y}_1 - \bar{y}_2}{s_p \cdot \sqrt{\tfrac{2}{n_g}}} 
+$$
 
 ## Human Computers
 
 ![](img/eda-preface-01.jpg){fig-align="center" width=65%}
 
-## The formula
+## Teaching & exams
 
-$$
-T_{calc} = \cfrac{\bar{y}_1 - \bar{y}_2}{s_p \cdot \sqrt{\tfrac{2}{n_g}}} 
-$$
+> “We teach it because it's what we do; we do it because it's what we teach.” --- Wasserstein (2016)
 
-$$
-T_{calc} \approx \cfrac{\Delta \cdot n}{s} 
-$$
+![](img/penandpaper.jpg){fig-align="center" width=65%}
 
-## The distribution
+## All in the same boat
 
-```{r}
-pacman::p_load(tidyverse)
-ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
-  stat_function(fun = dt, args = list(df = 2), size = 3) +
-  theme_minimal() +
-  labs(x = "", y = "") +
-  scale_x_continuous(breaks = c(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5)) +
-  theme(axis.text.x = element_blank(),
-        axis.text.y = element_blank())
-```
+Q: Why do so many colleges and grad schools teach p = 0.05?
 
-## Bayes Theorem
+A: Because that's still what the scientific community and journal editors use.
+
+Q: Why do so many people still use p = 0.05?
+
+A: Because that's what they were taught in college or grad school.
 
 
-$$
-Pr(H_0|D) = \cfrac{Pr(D|H_0)\cdot Pr(H_0)}{Pr(D)}
-$$
+# The saviour
+
+
 
 
 
@@ -156,10 +171,30 @@ $$
 Source: [Who Is this gentleman? When and where was he born?](https://www.york.ac.uk/depts/maths/histstat/bayespic.htm)
 :::
 
+## Bayes Theorem
+
+
+$$
+Pr(H_0|D) = \cfrac{Pr(D|H_0)\cdot Pr(H_0)}{Pr(D)}
+$$
+
+## Barriers 
+
+> “Methods for robust statistics, a state of the art in the early 2000s, notably for robust regression and robust multivariate analysis.” --- robust: Port of the S+ “Robust Library”
+
+
+## Further reading...
+
+- [Odds & Ends --- Introducing Probability & Decision with a Visual Emphasis by Jonathan Weisberg](https://jonathanweisberg.org/vip/)
+- [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+- [tidybayes: Bayesian analysis + tidy data + geoms](https://mjskay.github.io/tidybayes/index.html)
+
 ## References {.smaller}
 
 - Gigerenzer, G. *et al.* (2004). The null ritual. The Sage handbook of quantitative methodology for the social sciences, 391-408.
 - Wasserstein, R. L. *et al.* (2019). Moving to a world beyond "p< 0.05". The American Statistician, 73(sup1), 1-19.
 - Kawaler, S. *et al.* (1981). The Habitable Sun-One of Herschel, William's Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.
-
+- Fay, D.S. *et al.* (2018). A biologist’s guide to statistical thinking and analysis. WormBook: The Online Review of C. elegans Biology [Internet].
+- McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.
+- Wasserstein, R. L. *et al.* (2016). The ASA statement on p-values: context, process, and purpose. The American Statistician, 70(2), 129-133.
 

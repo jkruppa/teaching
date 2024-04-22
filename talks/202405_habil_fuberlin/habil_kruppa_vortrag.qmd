@@ -19,6 +19,10 @@ format:
 
 ![](img/oh_god_stars.png){fig-align="center" width=100%}
 
+::: aside
+"To understand a science, you have to know its history" --- Auguste Comte
+:::
+
 
 # A world before p<0.05
 
@@ -31,11 +35,11 @@ format:
 ![*Funder and publisher of Isaac Newton. Predicted Halley's Comet orbit.*](img/halleyold.jpg){fig-align="center" width=65%}
 :::
 
-## The Habitable Sun 
+## Herschel's habitable Sun 
 
 ![](img/herschel_01.png){fig-align="center" width=100%}
 
-## The Habitable Sun
+## Herschel's habitable Sun 
 
 ![](img/herschel_02.png){fig-align="center" width=100%}
 
@@ -48,7 +52,7 @@ format:
 ![](img/newtonyoung.jpg){fig-align="center" width=75%}
 :::
 
-## Hollow Earth of Halley
+## Halley's hollow Earth 
 
 ![](img/hohlerde.png){fig-align="center" height=90%}
 
@@ -73,10 +77,37 @@ Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee
 
 
 
+# Groundbreaking philosophy
+
+## Probability statement
+
+![](img/rain.jpg){fig-align="center" width="10%"}
+
+
+## Population statement
+
+![](img/population.png){fig-align="center" width="20%"}
+
+## Falsification principle
+
+![](img/fehler.jpg){fig-align="center" width="10%"}
+
+# $\boldsymbol{Pr(D|H_0)}$ 
+
+
+## [Jerzy Neyman](https://en.wikipedia.org/wiki/Jerzy_Neyman) and [Egon Pearson](https://de.wikipedia.org/wiki/Egon_Pearson)
+
+::: {layout-ncol=2}
+
+![*Idea of confidence interval and scientific sampling*](img/Jerzy_Neyman.jpg){fig-align="center" width=65%}
+
+![*The son of Karl Pearson.*](img/Pearson_Egon.jpeg){fig-align="center" width=67%}
+:::
+
 
 ## Null ritual
 
-![](img/null_ritual.jpg){fig-align="center" width=65%}
+![](img/null_ritual.jpg){fig-align="center" width=70%}
 
 
 
@@ -108,8 +139,22 @@ ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
         axis.text.y = element_blank())
 ```
 
+## Bayes Theorem
 
 
+$$
+Pr(H_0|D) = \cfrac{Pr(D|H_0)\cdot Pr(H_0)}{Pr(D)}
+$$
+
+
+
+## [Thomas Bayes](https://en.wikipedia.org/wiki/Thomas_Bayes)
+
+![*"Never published what would become his most famous accomplishment"*](img/Thomas_Bayes.gif){fig-align="center" width=40%}
+
+::: aside
+Source: [Who Is this gentleman? When and where was he born?](https://www.york.ac.uk/depts/maths/histstat/bayespic.htm)
+:::
 
 ## References {.smaller}
 

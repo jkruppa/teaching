@@ -182,6 +182,28 @@ $$
 
 > “Methods for robust statistics, a state of the art in the early 2000s, notably for robust regression and robust multivariate analysis.” --- robust: Port of the S+ “Robust Library”
 
+- Users lack programming skills
+- Users lack theoretical understanding
+- Partners only use classic statistics that they have learnt
+- Students need statistics that they can also use in other courses
+
+## Confidence interal vs. credible interval
+
+```{r}
+ki_tbl <- tibble(delta = 0,
+                 arms = 1.5)
+
+ggplot(ki_tbl) +
+  aes(x = "2 - 1", y = delta) +
+  theme_void() +
+  geom_point(size = 10) +
+  geom_errorbar(aes(ymin = delta - arms, ymax = delta + arms), 
+                width = 0.1, size = 4) +
+  scale_y_continuous(limits = c(-2, 2), breaks = seq(-1, 5, 1))  +
+  coord_flip() +
+  theme(axis.text = element_blank()) 
+```
+
 
 ## Further reading...
 

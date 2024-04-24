@@ -15,20 +15,17 @@ format:
       theme: whiteboard
 ---
 
-## My God, it's full of stars...
+## My God, it's full of stars... {.smaller}
 
 ![](img/oh_god_stars.png){fig-align="center" width=100%}
 
-. . .
+# If statistics were invented today, the standard approach would be...? 
 
-> "To understand a science, you have to know its history" --- Auguste Comte
+# A world before p<0.05 {.smaller}
 
+> *"To understand a science, you have to know its history" --- Auguste Comte*
 
-# If statistics were invented today, the standard approach would be...?
-
-# A world before p<0.05
-
-## [William Herschel](https://en.wikipedia.org/wiki/William_Herschel) and [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley)
+## [William Herschel](https://en.wikipedia.org/wiki/William_Herschel) and [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley)  
 
 ::: {layout-ncol=2}
 
@@ -37,15 +34,15 @@ format:
 ![*Funder and publisher of Isaac Newton. Predicted Halley's Comet orbit.*](img/halleyold.jpg){fig-align="center" width=65%}
 :::
 
-## Herschel's habitable Sun 
+## Herschel's habitable Sun  {.smaller}
 
 ![](img/herschel_01.png){fig-align="center" width=100%}
 
-## Herschel's habitable Sun 
+## Herschel's habitable Sun  {.smaller}
 
 ![](img/herschel_02.png){fig-align="center" width=100%}
 
-## [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley) and [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)
+## [Edmond Halley](https://en.wikipedia.org/wiki/Edmond_Halley) and [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)  {.smaller}
 
 ::: {layout-ncol=2}
 
@@ -60,13 +57,11 @@ format:
 
 # A world waiting for p<0.05 
 
-## [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)
+## [Sir Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)  
 
 ![*"A genius who almost single-handedly created the foundations for modern statistical science"*](img/fischeryoung.jpeg){fig-align="center" width=30%}
 
-::: aside
-Source: [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962)
-:::
+- What was his super power?
 
 
 ## [Rothamsted Experimental Station](https://www.adelaide.edu.au/library/special/exhibitions/significant-life-fisher/rothamsted/)
@@ -130,11 +125,32 @@ ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
 
 # Again --- why?
 
-## The formula
+## The one formula *to rule them all* 
 
 $$
 T_{D} = \cfrac{\bar{y}_1 - \bar{y}_2}{s_p \cdot \sqrt{\tfrac{2}{n_g}}} 
 $$
+
+- $T_D$, the calculated test statistic of the data $D$
+
+- $\bar{y}_1 - \bar{y}_2$, the effect $\Delta$ as mean difference of group 1 and 2
+
+- $s_p$, the pooled standard deviation
+
+- $n_g$, the sample size of the balanced group 1 and 2
+
+## The warp core of Fishers statistics
+
+$$
+T = \cfrac{\Delta \cdot n}{s}
+$$
+
+- explains almost all statistical challenges
+
+- answers the question: "What are we actually modelling?"
+
+- fuels almost all statistical inference in regression
+
 
 ## Human Computers
 
@@ -142,7 +158,7 @@ $$
 
 ## Teaching & exams
 
-> “We teach it because it's what we do; we do it because it's what we teach.” --- Wasserstein (2016)
+> *“We teach it because it's what we do; we do it because it's what we teach.” --- Wasserstein (2016)*
 
 ![](img/penandpaper.jpg){fig-align="center" width=65%}
 
@@ -157,9 +173,9 @@ Q: Why do so many people still use p = 0.05?
 A: Because that's what they were taught in college or grad school.
 
 
-# The saviour
+# The saviour {.smaller}
 
-
+> *"As a statistician, there’s a big secret that I think the public needs to know. Statisticians don’t all agree on what probability is!" --- Kareem Carr*
 
 
 
@@ -171,14 +187,60 @@ A: Because that's what they were taught in college or grad school.
 Source: [Who Is this gentleman? When and where was he born?](https://www.york.ac.uk/depts/maths/histstat/bayespic.htm)
 :::
 
-## Bayes Theorem
+
+## Let's come back to probability 
+
+::: {layout-ncol=2}
+
+![*90% probability of rain in the next hour*](img/rain.jpg){fig-align="center" width="75%"}
+
+![*90% probability dinosaurs died by meteorite*](img/dino.jpg){fig-align="center" width="75%"}
+:::
+
+## Two schools of probability {.smaller}
+
+. . .
+
+**Probability as Frequency**
+
+- What’s the probability a coin will land heads? 
+- Depends on how often it lands heads --- the *frequency* of heads
+
+. . .
+
+**Probability as Belief**
+
+- "humans are probably the main cause of our changing climate."
+- "the probability the dinosaurs were wiped out by a meteor is."
+
+
+. . . 
+
+> *"Inside every non-Bayesian, there is a Bayesian struggling to get out." --- Dennis V. Lindley (quoted by E. T. Jaynes)*
+
+
+## Bayes Theorem {.smaller}
+
+*Suppose a hypothesis $H$ and some data $D$ as evidence*
 
 
 $$
-Pr(H_0|D) = \cfrac{Pr(D|H_0)\cdot Pr(H_0)}{Pr(D)}
+Pr(H|D) = \cfrac{Pr(D|H)\cdot Pr(H)}{Pr(D)}
 $$
 
-## Barriers 
+- $Pr(H|D)$ asks how probable is our explanation $H$ given our data $D$?  
+
+- $Pr(D|H)$ corresponds to how well our hypothesis $H$ accounts for our data $D$.
+
+- $Pr(H)$  corresponds to how well our hypothesis fits with other things we know.
+
+- $Pr(D)$ corresponds to how surprising the data $D$ is.
+
+::: aside
+Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/probability-induction.html#bayesibe)
+:::
+
+## Barriers {.smaller}
 
 > “Methods for robust statistics, a state of the art in the early 2000s, notably for robust regression and robust multivariate analysis.” --- robust: Port of the S+ “Robust Library”
 
@@ -205,11 +267,18 @@ ggplot(ki_tbl) +
 ```
 
 
-## Further reading...
+## Further reading... {.smaller}
 
 - [Odds & Ends --- Introducing Probability & Decision with a Visual Emphasis by Jonathan Weisberg](https://jonathanweisberg.org/vip/)
 - [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
-- [tidybayes: Bayesian analysis + tidy data + geoms](https://mjskay.github.io/tidybayes/index.html)
+- [R package `{tidybayes}` --- Bayesian analysis + tidy data + geoms](https://mjskay.github.io/tidybayes/index.html)
+- [R package `{bayestestR}`](https://easystats.github.io/bayestestR/index.html)
+- [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962)
+
+## Wait... what about...
+
+![](img/prediction.jpg){fig-align="center" width=100%}
+
 
 ## References {.smaller}
 

@@ -240,6 +240,9 @@ $$
 Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/probability-induction.html#bayesibe)
 :::
 
+## Why now?
+
+
 ## Barriers {.smaller}
 
 > “Methods for robust statistics, a state of the art in the early 2000s, notably for robust regression and robust multivariate analysis.” --- robust: Port of the S+ “Robust Library”
@@ -248,10 +251,15 @@ Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/pro
 - Users lack theoretical understanding
 - Partners only use classic statistics that they have learnt
 - Students need statistics that they can also use in other courses
+- Bayesian statistics needs priors
+- The $p$-value is accecpted and widespread
 
-## Confidence interal vs. credible interval
+## Confidence interal vs. credible interval {.smaller}
+
+> *"given the observed data, the effect has 95% probability of falling within this range"*
 
 ```{r}
+#| fig-align: center
 ki_tbl <- tibble(delta = 0,
                  arms = 1.5)
 
@@ -266,6 +274,23 @@ ggplot(ki_tbl) +
   theme(axis.text = element_blank()) 
 ```
 
+> *"there is a 95% probability that when computing a confidence interval from data of this sort, the effect falls within this range"*
+
+## Bayes factor
+
+- Bayes factors are a ratio of the likelihood of $H_0$ over $H_1$
+
+- If the ratio is 1, then $H_0$ and $H_1$ are equally likely
+
+- If the Bayes factor is > 1, we have more evidence to support $H_0$
+
+- If the Bayes factor is > 1, we have more evidence to support $H_1$
+
+. . .
+
+- Again, you might ask for a threshold  --- give me my $\alpha$! Okay, its 10...
+
+## {background-color="black" background-image="img/how.avif"}
 
 ## Further reading... {.smaller}
 

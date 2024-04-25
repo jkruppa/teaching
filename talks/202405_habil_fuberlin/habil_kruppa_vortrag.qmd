@@ -242,6 +242,14 @@ Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/pro
 
 ## Why now?
 
+- Machine learning starts more or less in 2001
+
+- Modern laptops enable the calculation of more complex models
+
+- Students *may* bring a laptop to participate in the seminars
+
+- Better R / Phyton packages allow to run models without *deeper* knowledge of model building
+
 
 ## Barriers {.smaller}
 

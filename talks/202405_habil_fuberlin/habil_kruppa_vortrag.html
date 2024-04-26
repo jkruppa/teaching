@@ -537,14 +537,10 @@ T = \cfrac{\Delta \cdot n}{s}
 <blockquote>
 <p><em>“We teach it because it’s what we do; we do it because it’s what we teach.” — Wasserstein (2016)</em></p>
 </blockquote>
-
-<img data-src="img/penandpaper.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"></section>
-<section id="all-in-the-same-boat" class="slide level2">
-<h2>All in the same boat</h2>
-<p>Q: Why do so many colleges and grad schools teach p = 0.05?</p>
-<p>A: Because that’s still what the scientific community and journal editors use.</p>
-<p>Q: Why do so many people still use p = 0.05?</p>
-<p>A: Because that’s what they were taught in college or grad school.</p>
+<p><strong>Q:</strong> <em>Why do so many colleges and grad schools teach <span class="math inline">\(p = 0.05\)</span>?</em></p>
+<p><strong>A:</strong> <em>Because that’s still what the scientific community and journal editors use.</em></p>
+<p><strong>Q:</strong> <em>Why do so many people still use <span class="math inline">\(p = 0.05\)</span>?</em></p>
+<p><strong>A:</strong> <em>Because that’s what they were taught in college or grad school.</em></p>
 </section></section>
 <section>
 <section id="the-saviour" class="title-slide slide level1 smaller center">
@@ -645,9 +641,14 @@ Pr(H|D) = \cfrac{Pr(D|H)\cdot Pr(H)}{Pr(D)}
 <li>Users lack theoretical understanding</li>
 <li>Partners only use classic statistics that they have learnt</li>
 <li>Students need statistics that they can also use in other courses</li>
-<li>Bayesian statistics needs priors</li>
+<li>Bayesian statistics needs priors (and priors are not objective)</li>
 <li>The <span class="math inline">\(p\)</span>-value is accecpted and widespread</li>
 </ul>
+<div class="fragment">
+<ul>
+<li>Sometimes Bayes seems like vegan sausages…</li>
+</ul>
+</div>
 </section>
 <section id="confidence-interal-vs.-credible-interval" class="slide level2 smaller">
 <h2>Confidence interal vs.&nbsp;credible interval</h2>
@@ -673,31 +674,42 @@ Pr(H|D) = \cfrac{Pr(D|H)\cdot Pr(H)}{Pr(D)}
 </ul>
 </div>
 </section>
+<section id="why-hang-on-to-frequentist-statistics" class="slide level2">
+<h2>Why hang on to frequentist statistics…</h2>
+<ul>
+<li><p>If you know the distribution of your result, parametric statistics is a powerful tool (the prior of frequentist statistics, if you will)</p></li>
+<li><p>If you have a ridiculously small number of cases, then exploratory data analysis is your solution</p></li>
+<li><p>If you want to exam many students in written form, then use the techniques around 1900</p></li>
+<li><p>Is it the effect of the data or the statistical method?</p></li>
+</ul>
+</section>
 <section id="section" class="slide level2" data-background-color="black" data-background-image="img/how.avif">
 <h2></h2>
 </section>
-<section id="further-reading" class="slide level2 smaller">
-<h2>Further reading…</h2>
+<section id="further-reading" class="slide level2">
+<h2>Further reading</h2>
 <ul>
 <li><a href="https://jonathanweisberg.org/vip/">Odds &amp; Ends — Introducing Probability &amp; Decision with a Visual Emphasis by Jonathan Weisberg</a></li>
 <li><a href="https://bookdown.org/content/4857/">Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition</a></li>
 <li><a href="https://mjskay.github.io/tidybayes/index.html">R package <code>{tidybayes}</code> — Bayesian analysis + tidy data + geoms</a></li>
 <li><a href="https://easystats.github.io/bayestestR/index.html">R package <code>{bayestestR}</code></a></li>
-<li><a href="https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962">Ronald Aylmer Fisher (1890-1962)</a></li>
 </ul>
 </section>
 <section id="wait-what-about" class="slide level2">
 <h2>Wait… what about…</h2>
 
 <img data-src="img/prediction.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="if-statistics-were-being-invented-today-bootstrapping-as-well-as-related-re-sampling-methods-would-be-the-standard-go-to-approach.-fay-2018" class="slide level2">
+<h2><em>“[…], if statistics were being invented today, bootstrapping, as well as related re-sampling methods, would be the standard go-to approach.” — Fay (2018)</em></h2>
+</section>
 <section id="references" class="slide level2 smaller">
 <h2>References</h2>
 <ul>
 <li>Gigerenzer, G. <em>et al.</em> (2004). The null ritual. The Sage handbook of quantitative methodology for the social sciences, 391-408.</li>
-<li>Wasserstein, R. L. <em>et al.</em> (2019). Moving to a world beyond “p&lt; 0.05”. The American Statistician, 73(sup1), 1-19.</li>
-<li>Kawaler, S. <em>et al.</em> (1981). The Habitable Sun-One of Herschel, William’s Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.</li>
 <li>Fay, D.S. <em>et al.</em> (2018). A biologist’s guide to statistical thinking and analysis. WormBook: The Online Review of C. elegans Biology [Internet].</li>
+<li>Kawaler, S. <em>et al.</em> (1981). The Habitable Sun-One of Herschel, William’s Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.</li>
 <li>McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.</li>
+<li>Wasserstein, R. L. <em>et al.</em> (2019). Moving to a world beyond “p&lt; 0.05”. The American Statistician, 73(sup1), 1-19.</li>
 <li>Wasserstein, R. L. <em>et al.</em> (2016). The ASA statement on p-values: context, process, and purpose. The American Statistician, 70(2), 129-133.</li>
 </ul>
 <div class="quarto-auto-generated-content">

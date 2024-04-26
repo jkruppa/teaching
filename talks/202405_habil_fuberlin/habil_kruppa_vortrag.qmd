@@ -160,17 +160,13 @@ $$
 
 > *“We teach it because it's what we do; we do it because it's what we teach.” --- Wasserstein (2016)*
 
-![](img/penandpaper.jpg){fig-align="center" width=65%}
+**Q:** *Why do so many colleges and grad schools teach $p = 0.05$?*
 
-## All in the same boat
+**A:** *Because that's still what the scientific community and journal editors use.*
 
-Q: Why do so many colleges and grad schools teach p = 0.05?
+**Q:** *Why do so many people still use $p = 0.05$?*
 
-A: Because that's still what the scientific community and journal editors use.
-
-Q: Why do so many people still use p = 0.05?
-
-A: Because that's what they were taught in college or grad school.
+**A:** *Because that's what they were taught in college or grad school.*
 
 
 # The saviour {.smaller}
@@ -259,8 +255,12 @@ Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/pro
 - Users lack theoretical understanding
 - Partners only use classic statistics that they have learnt
 - Students need statistics that they can also use in other courses
-- Bayesian statistics needs priors
-- The $p$-value is accecpted and widespread
+- Bayesian statistics needs priors (and priors are not objective)
+- The $p$-value is accecpted and widespread 
+
+. . .
+
+- Sometimes Bayes seems like vegan sausages...
 
 ## Confidence interal vs. credible interval {.smaller}
 
@@ -284,7 +284,7 @@ ggplot(ki_tbl) +
 
 > *"there is a 95% probability that when computing a confidence interval from data of this sort, the effect falls within this range"*
 
-## Bayes factor
+## Bayes factor 
 
 - Bayes factors are a ratio of the likelihood of $H_0$ over $H_1$
 
@@ -298,27 +298,41 @@ ggplot(ki_tbl) +
 
 - Again, you might ask for a threshold  --- give me my $\alpha$! Okay, its 10...
 
+## Why hang on to frequentist statistics...
+
+- If you know the distribution of your result, parametric statistics is a powerful tool (the prior of frequentist statistics, if you will)
+
+- If you have a ridiculously small number of cases, then exploratory data analysis is your solution
+
+- If you want to exam many students in written form, then use the techniques around 1900
+
+- Is it the effect of the data or the statistical method?
+
 ## {background-color="black" background-image="img/how.avif"}
 
-## Further reading... {.smaller}
+## Further reading
 
 - [Odds & Ends --- Introducing Probability & Decision with a Visual Emphasis by Jonathan Weisberg](https://jonathanweisberg.org/vip/)
 - [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
 - [R package `{tidybayes}` --- Bayesian analysis + tidy data + geoms](https://mjskay.github.io/tidybayes/index.html)
 - [R package `{bayestestR}`](https://easystats.github.io/bayestestR/index.html)
-- [Ronald Aylmer Fisher (1890-1962)](https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962)
+
 
 ## Wait... what about...
 
 ![](img/prediction.jpg){fig-align="center" width=100%}
 
 
+
+## *"[…], if statistics were being invented today, bootstrapping, as well as related re-sampling methods, would be the standard go-to approach." — Fay (2018)*
+
 ## References {.smaller}
 
 - Gigerenzer, G. *et al.* (2004). The null ritual. The Sage handbook of quantitative methodology for the social sciences, 391-408.
-- Wasserstein, R. L. *et al.* (2019). Moving to a world beyond "p< 0.05". The American Statistician, 73(sup1), 1-19.
-- Kawaler, S. *et al.* (1981). The Habitable Sun-One of Herschel, William's Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.
 - Fay, D.S. *et al.* (2018). A biologist’s guide to statistical thinking and analysis. WormBook: The Online Review of C. elegans Biology [Internet].
+- Kawaler, S. *et al.* (1981). The Habitable Sun-One of Herschel, William's Stranger Ideas. Journal of the Royal Astronomical Society of Canada, Vol. 75, P. 46, 1981, 75, 46.
 - McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.
+- Wasserstein, R. L. *et al.* (2019). Moving to a world beyond "p< 0.05". The American Statistician, 73(sup1), 1-19.
 - Wasserstein, R. L. *et al.* (2016). The ASA statement on p-values: context, process, and purpose. The American Statistician, 70(2), 129-133.
+
 

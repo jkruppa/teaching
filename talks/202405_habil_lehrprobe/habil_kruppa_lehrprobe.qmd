@@ -124,6 +124,14 @@ $$
 
 We will use for different aspects the same letters. This might be confusing...
 
+## Any experience?
+
+*Gesa M. Richter and Jochen Kruppa, et al.*
+
+- [A combined epigenome- and transcriptome-wide association study of the oral masticatory mucosa assigns CYP1B1 a central role for epithelial health in smokers](https://link.springer.com/article/10.1186/s13148-019-0697-y)
+
+- [Epigenetic adaptations of the masticatory mucosa to periodontal inflammation](https://link.springer.com/article/10.1186/s13148-021-01190-7)
+
 ## Further reading {.smaller}
 
 - [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)

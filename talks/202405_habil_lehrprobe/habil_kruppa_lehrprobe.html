@@ -349,6 +349,9 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 <li><p>Abnormal methylation patterns are associated with numerous <strong>diseases</strong>, including cancer, autoimmune diseases, and neurological disorders.</p></li>
 <li><p>In <strong>cancer</strong>, certain genes become abnormally methylated, leading to oncogene activation or tumor suppressor gene silencing.</p></li>
 </ul>
+<div class=".aside">
+<p><em>More information: <a href="https://www.nature.com/articles/npp2012112">DNA Methylation and Its Basic Function</a></em></p>
+</div>
 </section>
 <section id="why-methylation-analysis-1" class="slide level2">
 <h2>Why methylation analysis?</h2>
@@ -357,6 +360,9 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 <li><p>Methylation patterns change with <strong>age</strong> and in response to environmental factors, such as diet, toxins, and stress.</p></li>
 <li><p>As methylation can be influenced by genetic and environmental factors, its analysis is essential for <strong>personalized medicine</strong>.</p></li>
 </ul>
+<div class=".aside">
+<p><em>More information: <a href="https://www.nature.com/articles/npp2012112">DNA Methylation and Its Basic Function</a></em></p>
+</div>
 </section>
 <section id="dutch-famine-of-19441945" class="slide level2">
 <h2>Dutch famine of 1944–1945</h2>
@@ -371,6 +377,13 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 <li>Findings suggest that severe malnutrition during critical periods of development can lead to epigenetic marks that persist throughout life.</li>
 </ul>
 </section>
+<section>
+<section id="methylation-is-epigenetic" class="title-slide slide level1 center">
+<h1>Methylation is epigenetic</h1>
+<div class=".aside">
+<p><em>“on top of” or “in addition to” genetic</em></p>
+</div>
+</section>
 <section id="landscape-of-methylation" class="slide level2">
 <h2>Landscape of methylation</h2>
 
@@ -382,29 +395,74 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 <section id="how-can-i-help" class="slide level2">
 <h2>How can I help?</h2>
 
-<img data-src="img/mr-dna.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><ul>
+<img data-src="img/mr-dna.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div class="fragment">
+<ol type="1">
 <li>Differential analysis</li>
 <li>Prediction model</li>
+</ol>
+</div>
+</section>
+<section id="differential-analysis" class="slide level2">
+<h2>Differential analysis</h2>
+<p><span class="math display">\[
+Y \sim X + C
+\]</span></p>
+<ul>
+<li><span class="math inline">\(Y\)</span> is our outcome</li>
+<li><span class="math inline">\(X\)</span> is our factor with two levels. Our two or more treatment groups</li>
+<li><span class="math inline">\(C\)</span> is our confunder effect of gender or age</li>
 </ul>
+<p><strong>Aim</strong>: To find differences in <span class="math inline">\(Y\)</span> between two or more treatment groups</p>
+</section>
+<section id="prediction-model" class="slide level2">
+<h2>Prediction model</h2>
+<p><span class="math display">\[
+Y \sim X_1 + ... + X_p
+\]</span></p>
+<ul>
+<li><span class="math inline">\(Y\)</span> is our binary outcome (<span class="math inline">\(0/1\)</span>)</li>
+<li><span class="math inline">\(X_1, ..., X_p\)</span> are the normalised or standardised features</li>
+</ul>
+<p><strong>Aim</strong>: To predict <span class="math inline">\(Y\)</span> by features</p>
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
-<p>Microarray-based methods</p>
+<h3 id="microarray-based-methods">Microarray-based methods</h3>
 <ul>
 <li>Illumina HumanMethylation450 (450k)</li>
 <li>Illumina Infinium MethylationEPIC BeadChip targets over 850,000 CpG sites</li>
+<li>We have idat files</li>
 </ul>
-<p>High-throughput sequencing</p>
+<h3 id="high-throughput-sequencing">High-throughput sequencing</h3>
 <ul>
 <li>Bisulfite sequencing (BS-Seq) data</li>
+<li>We have fastq or sam/bam files</li>
 </ul>
 </section>
 <section id="illumina-array" class="slide level2">
 <h2>Illumina array</h2>
 <ul>
-<li>a methylated intensity (denoted by M) and an unmethylated intensity (denoted by U)</li>
+<li>Methylated intensity (denoted by M) and unmethylated intensity (denoted by U)</li>
 <li><span class="math inline">\(\beta\mbox{-values} = \cfrac{M}{M+U}\)</span></li>
 <li><span class="math inline">\(\mbox{M-values} = log2\left(\cfrac{M}{U}\right)\)</span></li>
+</ul>
+<div class="fragment">
+<p><strong>Caution</strong></p>
+<p>We will use for different aspects the same letters. This might be confusing…</p>
+</div>
+</section>
+<section id="further-reading" class="slide level2 smaller">
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://www.nature.com/articles/npp2012112">DNA Methylation and Its Basic Function</a></li>
+<li><a href="https://compgenomr.github.io/book/bsseq.html">Chapter 10 DNA methylation analysis using bisulfite sequencing data</a> of the great book <a href="https://compgenomr.github.io/book/">Computational Genomics with R</a></li>
+<li><a href="https://www.bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html">A cross-package Bioconductor workflow for analysing methylation array data</a></li>
+<li><a href="https://github.com/NBISweden/workshop-epigenomics-RTDs/blob/master/docs/content/tutorials/methylationSeq/Seq_Tutorial.rst">DNA Methylation: Bisulfite Sequencing Workflow</a></li>
+<li><a href="https://www.bioconductor.org/help/course-materials/2015/BioC2015/methylation450k.html">Analysis of 450k data using <code>{minfi}</code></a> and <a href="https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html">The minfi User’s Guide</a></li>
+<li><a href="https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/methylKit/inst/doc/methylKit.html"><code>{methylKit}</code>: User Guide v1.2.4</a></li>
+<li><a href="https://bioconductor.org/packages/release/bioc/vignettes/methylGSA/inst/doc/methylGSA-vignette.html"><code>{methylGSA}</code>: Gene Set Analysis for DNA Methylation Datasets</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6761945/"><code>{BioMethyl}</code>: an R package for biological interpretation of DNA methylation data</a></li>
+<li><a href="https://www.bioinformatics.babraham.ac.uk/projects/bismark/">Bismark</a></li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller">
@@ -414,22 +472,19 @@ Prof.&nbsp;Dr.&nbsp;Jochen Kruppa-Scheetz
 <li>Maksimovic, J. <em>et al.</em> (2016). A cross-package Bioconductor workflow for analysing methylation array data. F1000Research, 5.</li>
 <li>Krueger, F. <em>et al.</em> (2011). Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. bioinformatics, 27(11), 1571-1572.</li>
 <li>Aryee, M. J. <em>et al.</em> (2014). Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics, 30(10), 1363-1369.</li>
+<li>Maksimovic, J. <em>et al.</em> (2021). Gene set enrichment analysis for genome-wide DNA methylation data. Genome Biology, 22(1), 173.</li>
+<li>Wang, Y. <em>et al.</em> (2019). BioMethyl: an R package for biological interpretation of DNA methylation data. Bioinformatics, 35(19), 3635-3641.</li>
 </ul>
 </section>
 <section id="sources" class="slide level2 smaller">
 <h2>Sources</h2>
-<ul>
-<li><a href="https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html">A cross-package Bioconductor workflow for analysing methylation array data</a></li>
-<li><a href="https://www.bioinformatics.babraham.ac.uk/projects/bismark/">Bismark</a></li>
-<li><a href="https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html">The minfi User’s Guide</a></li>
-</ul>
 <div class="quarto-auto-generated-content">
 <p><img src="logo_osna.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://jkruppa.github.io/">Openbook Bio Data Science | The definitive guide</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

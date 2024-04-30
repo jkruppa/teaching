@@ -133,16 +133,18 @@ We will use for different aspects the same letters. This might be confusing...
 - [Epigenetic adaptations of the masticatory mucosa to periodontal inflammation](https://link.springer.com/article/10.1186/s13148-021-01190-7)
 
 
-## The cake is a lie
+## The cake is a lie...
 
 ![](img/cake.jpg){fig-align="center" width=60%}
 
+# Let's do a methylation analysis... in R
 
 ## Further reading {.smaller}
 
 - [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)
 - [Chapter 10 DNA methylation analysis using bisulfite sequencing data](https://compgenomr.github.io/book/bsseq.html) of the great book [Computational Genomics with R](https://compgenomr.github.io/book/)
 - [A cross-package Bioconductor workflow for analysing methylation array data](https://www.bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html)
+- [Methylation Analysis with `{MEAL}`](https://www.bioconductor.org/packages/devel/bioc/vignettes/MEAL/inst/doc/MEAL.html)
 - [DNA Methylation: Bisulfite Sequencing Workflow](https://github.com/NBISweden/workshop-epigenomics-RTDs/blob/master/docs/content/tutorials/methylationSeq/Seq_Tutorial.rst)
 - [Analysis of 450k data using `{minfi}`](https://www.bioconductor.org/help/course-materials/2015/BioC2015/methylation450k.html) and [The minfi User’s Guide](https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html)
 - [`{methylKit}`: User Guide v1.2.4](https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/methylKit/inst/doc/methylKit.html)

@@ -199,7 +199,37 @@ gsa <- gsameth(sig.cpg=sigCpGs, all.cpg=all, collection=Hs.c2)
 topGSA(gsa, number=10)
 
 ## -----------------------------------------------------------------------------
-## Better visualization
+## Better with MEAL?
 ## https://www.bioconductor.org/packages/devel/bioc/vignettes/MEAL/inst/doc/MEAL.html
 
+res <- runPipeline(set = meth, variable_names = "status")
 
+resAdj <- runPipeline(set = meth, variable_names = "status", 
+                      covariable_names = "age", analyses = c("DiffMean", "DiffVar"))
+resAdj
+
+## Manhattan
+
+targetRange <- GRanges("23:13000000-23000000")
+plot(resAdj, rid = "DiffMean", type = "manhattan", highlight = targetRange)
+
+plot(resAdj, rid = "DiffMean", type = "manhattan", subset = targetRange)
+
+## Volcano plot
+
+plot(resAdj, rid = "DiffMean", type = "volcano", tPV = 14, tFC = 0.4, 
+     show.labels = FALSE) + ggtitle("My custom Volcano")
+
+## QQplot
+
+plot(resAdj, rid = "DiffMean", type = "qq") + ggtitle("My custom QQplot")
+
+## Features
+
+plotFeature(set = meth, feat = "cg09383816", variables = "status") + 
+  ggtitle("Diff Means")
+
+## Regional plotting
+
+targetRange <- GRanges("chrX:13000000-14000000")
+plotRegion(resAdj, targetRange)

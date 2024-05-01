@@ -203,6 +203,8 @@ topGSA(gsa, number=10)
 ## Better with MEAL?
 ## https://www.bioconductor.org/packages/devel/bioc/vignettes/MEAL/inst/doc/MEAL.html
 
+## We use here a new example
+
 pacman::p_load(minfiData)
 
 meth <- mapToGenome(ratioConvert(MsetEx))

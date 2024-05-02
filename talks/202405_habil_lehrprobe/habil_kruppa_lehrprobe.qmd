@@ -139,6 +139,8 @@ We will use for different aspects the same letters. This might be confusing...
 
 # Let's do a methylation analysis... in R
 
+> *"Snap back to reality, ope, there goes gravity." --- Eminem, Lose yourself*
+
 ## Further reading {.smaller}
 
 - [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)

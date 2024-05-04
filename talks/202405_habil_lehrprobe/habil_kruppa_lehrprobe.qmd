@@ -164,9 +164,6 @@ We will use for different aspects the same letters. This might be confusing...
 - Maksimovic, J. *et al.* (2021). Gene set enrichment analysis for genome-wide DNA methylation data. Genome Biology, 22(1), 173.
 - Wang, Y. *et al.* (2019). BioMethyl: an R package for biological interpretation of DNA methylation data. Bioinformatics, 35(19), 3635-3641.
 
-## Sources {.smaller}
-
-
 
 
 

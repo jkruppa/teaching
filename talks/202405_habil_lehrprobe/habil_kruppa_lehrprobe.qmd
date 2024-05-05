@@ -15,6 +15,21 @@ format:
       theme: whiteboard
 ---
 
+## Assumptions
+
+- You know nothing...
+
+- One does not simply do a methylation analysis...
+
+- We focus of one part with hands on...
+
+- There is more to learn an d to do... but we do not have all the time.
+
+. . .
+
+> *"The imperfect project you actually complete is worth more than the perfect project you never finish." — James Clear*
+
+
 ## Why methylation analysis?
 
 - Methylation is a crucial epigenetic modification that **regulates** gene expression without altering the DNA sequence.

@@ -15,7 +15,15 @@ format:
       theme: whiteboard
 ---
 
-## My God, it's full of stars... {.smaller}
+## Knocked down angel
+
+![](img/angel_01.png){fig-align="center" width=100%}
+
+. . . 
+
+... we will hit him/her (?) hard!
+
+## My God, it's full of stars... 
 
 ![](img/oh_god_stars.png){fig-align="center" width=100%}
 
@@ -307,6 +315,8 @@ ggplot(ki_tbl) +
 - If you want to exam many students in written form, then use the techniques around 1900
 
 - Is it the effect of the data or the statistical method?
+
+- How do we know how our data is distributed? 
 
 ## {background-color="black" background-image="img/how.avif"}
 

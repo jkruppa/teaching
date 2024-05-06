@@ -170,9 +170,15 @@ $$
 - fuels almost all statistical inference in regression
 
 
-## Human Computers
+## Human Computers {.smaller}
 
-![](img/eda-preface-01.jpg){fig-align="center" width=65%}
+![](img/eda-preface-01.jpg){fig-align="center" width=100%}
+
+. . .
+
+$$
+\sum (x - \bar{x})^2 \;\mbox{and}\; \sum x^2 - \cfrac{(\sum x)^2}{n} 
+$$
 
 ## Teaching & exams
 
@@ -187,7 +193,7 @@ $$
 **A:** *Because that's what they were taught in college or grad school.*
 
 
-# The saviour {.smaller}
+# The saviour? {.smaller}
 
 > *"As a statistician, there’s a big secret that I think the public needs to know. Statisticians don’t all agree on what probability is!" --- Kareem Carr*
 
@@ -259,6 +265,8 @@ Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/pro
 - Machine learning starts more or less in 2001
 
 - Modern laptops enable the calculation of more complex models
+
+- MCMC is in a way the initiator 
 
 - Students *may* bring a laptop to participate in the seminars
 

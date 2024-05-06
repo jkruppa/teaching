@@ -21,7 +21,7 @@ format:
 
 . . . 
 
-... we will hit him/her (?) hard!
+... we will hit him/her (?) *hard*!
 
 ## My God, it's full of stars... 
 
@@ -67,7 +67,9 @@ format:
 
 ## [Sir Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)  
 
-![*"A genius who almost single-handedly created the foundations for modern statistical science"*](img/fischeryoung.jpeg){fig-align="center" width=30%}
+![*"A genius who almost single-handedly created the foundations for modern statistical science." --- A. Hald  in 'A History of Mathematical Statistics from 1750 to 1930'*](img/fischeryoung.jpeg){fig-align="center" width=30%}
+
+. . .
 
 - What was his super power?
 
@@ -82,7 +84,9 @@ format:
 
 
 
-# Groundbreaking philosophy
+# Groundbreaking philosophy {.smaller}
+
+> *"Statistical inferences are statements about the future made on the basis of data from the past." --- Ronald Fisher*
 
 ## Probability statement
 
@@ -93,9 +97,11 @@ format:
 
 ![](img/population.png){fig-align="center" width="20%"}
 
-## Falsification principle
+## Falsification principle {.smaller}
 
 ![](img/fehler.jpg){fig-align="center" width="10%"}
+
+> *"Whenever a theory appears to you as the only possible one, take this as a sign that you have neither understood the theory nor the problem which it was intended to solve." --- Karl Popper*
 
 # $\boldsymbol{Pr(D|H_0)}$ 
 
@@ -127,9 +133,13 @@ ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
 :::
 
 
-## The null ritual
+## The null ritual {.smaller}
 
-![](img/null_ritual.jpg){fig-align="center" width=70%}
+![](img/null_ritual.jpg){fig-align="center" width=100%}
+
+. . .
+
+> *"Fisher’s null hypothesis testing is one tool in the statistical toolbox, not a ritual. Should we ban null hypothesis testing? No, there is no reason to do so; it is just one small tool among many. What we need is to educate the next generation to dare to think and free themselves from compulsive hand-washing, anxiety, and feelings of guilt." G. Gigerenzer*
 
 # Again --- why?
 

@@ -63,6 +63,24 @@ format:
 
 ![](img/hohlerde.png){fig-align="center" height=90%}
 
+## So, where we are?
+
+. . .
+
+**Constant of nature**
+
+- Why is the sky blue?
+
+- Why is it dark at night?
+
+. . .
+
+**Constant of culture**
+
+- Why does the week have seven days?
+
+- Why is there twenty-four hours in a day?
+
 # A world waiting for p<0.05 
 
 ## [Sir Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher)  
@@ -168,6 +186,10 @@ $$
 - answers the question: "What are we actually modelling?"
 
 - fuels almost all statistical inference in regression
+
+. . .
+
+- **Constant of culture** -- Significance level $\alpha$ of 5%. **Why?**
 
 
 ## Human Computers {.smaller}

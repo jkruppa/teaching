@@ -3,7 +3,8 @@
 
 pacman::p_load(tidyverse, 
                minfi,
-               IlluminaHumanMethylation450kanno.ilmn12.hg19)
+               IlluminaHumanMethylation450kanno.ilmn12.hg19,
+               MEAL)
 
 ## -----------------------------------------------------------------------------
 ## Data
@@ -202,7 +203,31 @@ topGSA(gsa, number=10)
 ## Better with MEAL?
 ## https://www.bioconductor.org/packages/devel/bioc/vignettes/MEAL/inst/doc/MEAL.html
 
+## We use here a new example
+
+pacman::p_load(minfiData)
+
+meth <- mapToGenome(ratioConvert(MsetEx))
+rowData(meth) <- getAnnotation(meth)[, -c(1:3)]
+
+
+## Remove probes measuring SNPs
+meth <- dropMethylationLoci(meth)
+
+## Remove probes with SNPs
+meth <- dropLociWithSnps(meth)
+
+## Remove probes with NAs
+meth <- meth[!apply(getBeta(meth), 1, function(x) any(is.na(x))), ]
+
+
+## convert example above
+## meth <- preprocessRaw(rgSet)
+
 res <- runPipeline(set = meth, variable_names = "status")
+
+head(getAssociation(res, "DiffMean"))
+
 
 resAdj <- runPipeline(set = meth, variable_names = "status", 
                       covariable_names = "age", analyses = c("DiffMean", "DiffVar"))
@@ -226,7 +251,7 @@ plot(resAdj, rid = "DiffMean", type = "qq") + ggtitle("My custom QQplot")
 
 ## Features
 
-plotFeature(set = meth, feat = "cg09383816", variables = "status") + 
+plotFeature(set = meth, feat = "cg09383816", variables = "Sample_Group") + 
   ggtitle("Diff Means")
 
 ## Regional plotting

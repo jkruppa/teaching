@@ -15,6 +15,21 @@ format:
       theme: whiteboard
 ---
 
+## Assumptions
+
+- You know nothing...
+
+- One does not simply do a methylation analysis...
+
+- We focus of one part with hands on...
+
+- There is more to learn an d to do... but we do not have all the time.
+
+. . .
+
+> *"The imperfect project you actually complete is worth more than the perfect project you never finish." — James Clear*
+
+
 ## Why methylation analysis?
 
 - Methylation is a crucial epigenetic modification that **regulates** gene expression without altering the DNA sequence.
@@ -139,6 +154,8 @@ We will use for different aspects the same letters. This might be confusing...
 
 # Let's do a methylation analysis... in R
 
+> *"Snap back to reality, ope, there goes gravity." --- Eminem, Lose yourself*
+
 ## Further reading {.smaller}
 
 - [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)
@@ -161,9 +178,6 @@ We will use for different aspects the same letters. This might be confusing...
 - Aryee, M. J. *et al.* (2014). Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics, 30(10), 1363-1369.
 - Maksimovic, J. *et al.* (2021). Gene set enrichment analysis for genome-wide DNA methylation data. Genome Biology, 22(1), 173.
 - Wang, Y. *et al.* (2019). BioMethyl: an R package for biological interpretation of DNA methylation data. Bioinformatics, 35(19), 3635-3641.
-
-## Sources {.smaller}
-
 
 
 

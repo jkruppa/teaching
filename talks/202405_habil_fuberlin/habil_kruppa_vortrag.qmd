@@ -346,6 +346,8 @@ ggplot(ki_tbl) +
 
 - Again, you might ask for a threshold  --- give me my $\alpha$! Okay, its 10...
 
+## Choose your weapon... {background-color="black" background-image="img/weapon_small.jpg"}
+
 ## Why hang on to frequentist statistics...
 
 - If you know the distribution of your result, parametric statistics is a powerful tool (the prior of frequentist statistics, if you will)

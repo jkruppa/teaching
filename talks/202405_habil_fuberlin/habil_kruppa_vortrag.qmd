@@ -301,6 +301,7 @@ Source: [Inference to the Best Explanation](https://jonathanweisberg.org/vip/pro
 
 - Users lack programming skills
 - Users lack theoretical understanding
+- Mathematics does not teach distributions. We calculate one value... that's it.
 - Partners only use classic statistics that they have learnt
 - Students need statistics that they can also use in other courses
 - Bayesian statistics needs priors (and priors are not objective)
@@ -346,19 +347,36 @@ ggplot(ki_tbl) +
 
 - Again, you might ask for a threshold  --- give me my $\alpha$! Okay, its 10...
 
-## Choose your weapon... {background-color="black" background-image="img/weapon_small.jpg"}
 
 ## Why hang on to frequentist statistics...
 
 - If you know the distribution of your result, parametric statistics is a powerful tool (the prior of frequentist statistics, if you will)
 
-- If you have a ridiculously small number of cases, then exploratory data analysis is your solution
+- If you have a ridiculously small number of cases, then exploratory data analysis is your solution!
 
-- If you want to exam many students in written form, then use the techniques around 1900
+- If you want to exam many students in written form, then use the techniques around 1900!
 
 - Is it the effect of the data or the statistical method?
 
 - How do we know how our data is distributed? 
+
+. . .
+
+- The reviewer know it... *Hic sunt dracones*
+
+## Choose your weapon... {background-color="black" background-image="img/weapon_small.jpg"}
+
+## Why switch to Bayesian statistics...
+
+- Bayes answers the question you are asking.
+
+- Your data is already large as hell, so you can use permutation methods.
+
+- If you have the conputational power, use them. 
+
+- Bayes mimics the human decision-making process better than the frequentist approach.
+
+- An avalanche also starts small...
 
 ## {background-color="black" background-image="img/how.avif"}
 

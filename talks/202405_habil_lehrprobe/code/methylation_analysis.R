@@ -58,12 +58,12 @@ mSetRaw <- preprocessRaw(rgSet)
 # visualise what the data looks like before and after normalisation
 par(mfrow=c(1,2))
 densityPlot(rgSet, sampGroups=targets$Sample_Group,main="Raw", legend=FALSE)
-legend("top", legend = levels(factor(targets$Sample_Group)), 
-       text.col=brewer.pal(8,"Dark2"))
+#legend("top", legend = levels(factor(targets$Sample_Group)), 
+#       text.col=brewer.pal(8,"Dark2"))
 densityPlot(getBeta(mSetSq), sampGroups=targets$Sample_Group,
             main="Normalized", legend=FALSE)
-legend("top", legend = levels(factor(targets$Sample_Group)), 
-       text.col=brewer.pal(8,"Dark2"))
+#legend("top", legend = levels(factor(targets$Sample_Group)), 
+#       text.col=brewer.pal(8,"Dark2"))
 
 ## -----------------------------------------------------------------------------
 ## Data exploration

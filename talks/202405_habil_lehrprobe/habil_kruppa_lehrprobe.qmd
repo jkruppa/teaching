@@ -152,6 +152,11 @@ We will use for different aspects the same letters. This might be confusing...
 
 ![](img/cake.jpg){fig-align="center" width=60%}
 
+## ... because you do it often!
+
+![](img/miniconda.jpeg){fig-align="center" width=60%}
+
+
 # Let's do a methylation analysis... in R
 
 > *"Snap back to reality, ope, there goes gravity." --- Eminem, Lose yourself*

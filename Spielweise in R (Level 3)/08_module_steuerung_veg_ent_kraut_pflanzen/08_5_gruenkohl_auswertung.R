@@ -1,5 +1,5 @@
 pacman::p_load(tidyverse, readxl, report, emmeans,
-               multcomp, zoo, conflicted)
+               multcomp, zoo, see,  conflicted)
 conflicts_prefer(dplyr::select)
 conflicts_prefer(dplyr::filter)
 
@@ -65,7 +65,20 @@ height_long_tbl %>%
   theme_minimal() +
   geom_point(position = position_dodge(0.9)) +
   stat_smooth(method = "loess", se = FALSE) +
-  labs(color = "name", linetype = "name")
+  labs(color = "name", linetype = "name") +
+  scale_color_manual(name = "name", values = c(1, 3, 4, 5)) +
+  scale_linetype_manual(name = "name", values = c(1, 3, 1, 3)) 
+
+
+
+ggplot(data = mydf, aes(x = year, y = mean,
+                        color = interaction(treatment, treatment.type),
+                        linetype = interaction(treatment, treatment.type))) +
+  geom_point(show.legend = FALSE) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean-se, ymax = mean+se),width = 0.1, size = 0.5) #+
+ # scale_color_manual(name = "Treatment conditions", values = rep(c("blue", "blue", "red", "red"), times = 2)) +
+ # scale_linetype_manual(name = "Treatment conditions", values = rep(c(1,2), times = 4))
 
 ## Die Punkte nach Lichtstärke (Tab Light Data einfärben)
 

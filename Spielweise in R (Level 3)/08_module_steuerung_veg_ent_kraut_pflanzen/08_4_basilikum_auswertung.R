@@ -1,12 +1,8 @@
-library(tidyverse)
-library(readxl)
-library(report)
-library(emmeans)
-library(multcomp)
-library(conflicted)
+pacman::p_load(tidyverse, readxl, report, emmeans,
+               multcomp, conflicted)
 conflicts_prefer(dplyr::select)
 
-basi_tbl <- read_excel("C:/Users/jokruppa/Desktop/keimversuch_basilikum_clean.xlsx", 
+basi_tbl <- read_excel("/Users/kruppajo/work/GitHub/teaching/Spielweise in R (Level 3)/08_module_steuerung_veg_ent_kraut_pflanzen/keimversuch_basilikum_2.xlsx", 
                         sheet = "rdata") %>% 
   mutate(versuchsgruppe = as_factor(versuchsgruppe))
 

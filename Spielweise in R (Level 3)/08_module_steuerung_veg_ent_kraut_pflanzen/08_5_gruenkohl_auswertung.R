@@ -1,14 +1,9 @@
-library(tidyverse)
-library(readxl)
-library(report)
-library(emmeans)
-library(multcomp)
-library(conflicted)
-library(zoo)
+pacman::p_load(tidyverse, readxl, report, emmeans,
+               multcomp, zoo, conflicted)
 conflicts_prefer(dplyr::select)
 conflicts_prefer(dplyr::filter)
 
-green_tbl <- read_excel("/Users/kruppajo/work/GitHub/teaching/data_scripts/Gruenkohl_daten_update.xlsx") %>% 
+green_tbl <- read_excel("/Users/kruppajo/work/GitHub/teaching/Spielweise in R (Level 3)/08_module_steuerung_veg_ent_kraut_pflanzen/wachstum_gruenkohl.xlsx") %>% 
   mutate(light = as_factor(light),
          variety = as_factor(variety),
          outcome = as_factor(outcome))
@@ -69,7 +64,8 @@ height_long_tbl %>%
              color = interaction(variety, light), linetype = interaction(variety, light))) +
   theme_minimal() +
   geom_point(position = position_dodge(0.9)) +
-  stat_smooth(method = "loess", se = FALSE)
+  stat_smooth(method = "loess", se = FALSE) +
+  labs(color = "name", linetype = "name")
 
 ## Die Punkte nach Lichtstärke (Tab Light Data einfärben)
 

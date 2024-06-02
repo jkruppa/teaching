@@ -74,8 +74,10 @@ height_long_tbl %>%
   theme(legend.key.width = unit(2,"line"))
 
 height_long_tbl %>% 
-  ggplot(aes(x = time, y = height, shape = interaction(variety, light),
-             color = interaction(variety, light), linetype = interaction(variety, light))) +
+  ggplot(aes(x = time, y = height, 
+             shape = interaction(variety, light),
+             color = interaction(variety, light), 
+             linetype = interaction(variety, light))) +
   theme_minimal() +
   geom_point(position = position_dodge(0.9), size = 2) +
   stat_smooth(method = "loess", se = FALSE) +

@@ -11,7 +11,6 @@ green_tbl <- read_excel("/Users/kruppajo/work/GitHub/teaching/Spielweise in R (L
          variety = as_factor(variety),
          outcome = as_factor(outcome))
 
-
 ## Höhe des Grünkohls
 
 height_tbl <- green_tbl %>% 

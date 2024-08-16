@@ -1,0 +1,49 @@
+---
+title: "Begrüßung Mathevorkurs"
+subtitle: ""
+author: "Prof. Dr. Jochen Kruppa-Scheetz"
+date: "09. September 2024"
+format:
+  revealjs: 
+    logo: logo_osna.png
+    css: logo.css
+    preview-links: auto
+    footer: "[Openbook Bio Data Science | Der entgültige Leitfaden](https://jkruppa.github.io/)"
+    theme: simple
+    slide-number: c/t
+---
+
+## Zitate
+
+> *“If you haven’t failed yet, you haven’t tried anything.” --- Reshma Saujani*
+
+> *“You have to spend some energy and effort to see the beauty of math." --- Maryam Mirzakhani*
+
+## Schwein & Uhrwerk
+
+![](img/schwein_2.webp){fig-align="center" width=75%}
+
+
+## Geschichte
+
+![](img/babel.jpeg){fig-align="center" width=75%}
+
+## Moral & Ethik
+
+![](img/eichmann.jpg){fig-align="center" width=60%}
+
+## Algorithmen 
+
+![](img/lovelace.jpg){fig-align="center" width=50%}
+
+## Reinheit 
+
+![](img/purity.png){fig-align="center" width=100%}
+
+## Computer 
+
+![](img/girlcomputer.png){fig-align="center" width=80%}
+
+## Link 
+
+[https://jkruppa.github.io/math/](https://jkruppa.github.io/math/)

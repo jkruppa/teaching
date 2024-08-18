@@ -40,25 +40,19 @@
 
 *“Humans are allergic to change. They love to say, ‘We’ve always done it this way.’ I try to fight that. That’s why I have a clock on my wall that runs counterclockwise.” – Grace Hopper, pioneering computer scientist*
 
-“Life is a series of building, testing, changing and iterating.” – Lauren Mosentha
+*“Life is a series of building, testing, changing and iterating.” – Lauren Mosentha*
 
-“Don’t let anyone rob you of your imagination, your creativity, or your curiosity. It’s your place in the world; it’s your life. Go on and do all you can with it, and make it the life you want to live.”  – Mae Jemison, first African American woman astronaut in space
+*“Don’t let anyone rob you of your imagination, your creativity, or your curiosity. It’s your place in the world; it’s your life. Go on and do all you can with it, and make it the life you want to live.”  – Mae Jemison, first African American woman astronaut in space*
 
-“An ugly baby is better than no baby at all. If you wait and wait and wait for your product to be perfect before you release it out into the world, you will often never get there.” – Kathryn Minshew
+*“An ugly baby is better than no baby at all. If you wait and wait and wait for your product to be perfect before you release it out into the world, you will often never get there.” – Kathryn Minshew*
 
-“If you haven’t failed yet, you haven’t tried anything.” -Reshma Saujani
+*“If you haven’t failed yet, you haven’t tried anything.” -Reshma Saujani*
 
-All sorts of things can happen when you’re open to new ideas and playing around with things. - Stephanie Kwolek, the chemist who invented Kevlar
+*All sorts of things can happen when you’re open to new ideas and playing around with things. - Stephanie Kwolek, the chemist who invented Kevlar*
 
-I became an astronomer because I could not imagine living on Earth and not trying to understand how the Universe works.
+*I became an astronomer because I could not imagine living on Earth and not trying to understand how the Universe works. - Vera Rubin, Astronomer*
 
-~ Vera Rubin, Astronomer
-
- 
-
-…her (Vera Rubin) struggle inspired me to keep pushing, do what I love and really believe that something will work out. And now, I’m a scientist at NASA.
-
-~ Regina Caputo, Astrophysicist
+*…her (Vera Rubin) struggle inspired me to keep pushing, do what I love and really believe that something will work out. And now, I’m a scientist at NASA. - Regina Caputo, Astrophysicist*
 
 *“You have to spend some energy and effort to see the beauty of math." — Maryam Mirzakhani*
 

@@ -1,6 +1,14 @@
-# Hallo! Es ist auch ein Skript Bio Data Science in Arbeit...
 
-Hier geht's zum [Skript Bio Data Science](https://jkruppa.github.io/)
+
+Hier findest du alle meine Materialien, die ich so während meiner Lehre nutze. Alles was irgendwann *alt* ist, kommt in den Ordner `_attic`. In dem Ordner findest du dann auch Sachen, die du eventuell vor ein paar Jahren hier gesehen hast.
+
+Beachte auch, dass es mittlerweile ein Openbook gibt. Hier geht's zum [Openbook Bio Data Science](https://jkruppa.github.io/)
+
+------------
+
+**Update 28-08-2024:** Ich habe die Struktur hier geändert, da ich die Videos und alles auf das Openbook Bio Data Science anpasse. Daher ist alles was kommt etwas veraltet. Ich lasse es aber so stehen, damit eventuell  von früher noch alles findet.
+
+------------
 
 # Wo ist was?
 

@@ -1,4 +1,5 @@
-pacman::p_load(tidyverse, magrittr, readxl, see, conflicted)
+## install.packages("pacman")
+pacman::p_load(tidyverse, readxl, see, conflicted)
 conflicts_prefer(dplyr::summarise)
 conflicts_prefer(dplyr::filter)
 

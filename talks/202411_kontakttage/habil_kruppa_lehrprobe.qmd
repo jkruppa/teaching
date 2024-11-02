@@ -15,159 +15,130 @@ format:
       theme: whiteboard
 ---
 
+
 ## Wie kann ich helfen?
 
-![](img/mr-dna.png){fig-align="center" width="50%"}
+![](img/karl.png){fig-align="center" width="50%"}
 
-## Wie geht es weiter?
+## Was willst du tun?
+
+::: {layout="[[-1], [1], [-1]]"}
+
+![](img/was_tun.png){fig-align="center" width="100%"}
+:::
+
+
+## Woher lerne ich?
+
+::: {layout="[1], [-1]]"}
+
+![](img/trainingTestingNKI.png){fig-align="center" width="80%"}
+:::
+
+## Wie lerne ich?
+
+![](img/class-bias-01.png){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-02.jpg){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-03.jpg){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-04.png){fig-align="center" width="80%"}
+
+## Woher kommt das Wissen?
+
+::: {layout="[1], [-1]]"}
+
+![](img/prinzen.jpg){fig-align="center" width="85%"}
+
+:::
+
+## Was ist das Label?
+
+> "In reality, the magic of machine learning is the grind of data labelling." --- Phil Jones
+
+## Gulu
+
+::: {layout="[1], [-1]]"}
+
+![](img/gulu.png){fig-align="center" width="80%"}
+
+:::
+
+## Reddit
+
+::: {layout="[1], [-1]]"}
+
+![](img/reddit.png){fig-align="center" width="80%"}
+
+:::
+
+## Was verdient man da so?
+
+>  "In return for 45 hours of intense, stressful work a week – possibly with unpaid overtime on top – annotators can expect to earn in the region [] approximately $1.16 per hour." --- The Guardian
+
+## Thorium-Reaktor oder small modular reactors (SMR)
+
+::: {layout="[1], [-1]]"}
+
+![](img/reaktor.png){fig-align="center" width="80%"}
+
+:::
+
+## Wasser...
+
+::: {layout="[1], [-1]]"}
+
+![](img/water.png){fig-align="center" width="80%"}
+
+:::
+
+## Die oder das Nutella?
+
+## Wettervorhersage und Regenmengen
+
+## Trainingsdaten und Testdaten
+
+- Woher kommen die Daten?
+- Wer säubert die Daten?
+
+## Was kostet eine Frage?
+
+- Energie 
+- Wasser
+
+## Welche Kultur entspringen die Daten?
+
+## Machen wir einen Einheitsbrei?
+
+## Paradigmenwechsel
+
+https://de.wikipedia.org/wiki/Paradigmenwechsel
+
+## Zitat zum Ende...
+
 
 > *"Voraussagen sind schwierig, vor allem wenn sie die Zukunft betreffen." — Nils Bohr*
-
-
-
-
-## Why methylation analysis?
-
-- Methylation is a crucial epigenetic modification that **regulates** gene expression without altering the DNA sequence.
-
-- Abnormal methylation patterns are associated with numerous **diseases**, including cancer, autoimmune diseases, and neurological disorders.
-
--  In **cancer**, certain genes become abnormally methylated, leading to oncogene activation or tumor suppressor gene silencing.
-
-::: .aside
-*More information: [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)*
-:::
-
-## Why methylation analysis?
-
-- Methylation plays a key in **development** by controlling the expression of genes critical for cell differentiation and organ formation. 
-
--  Methylation patterns change with **age** and in response to environmental factors, such as diet, toxins, and stress.
-
--  As methylation can be influenced by genetic and environmental factors, its analysis is essential for **personalized medicine**. 
-
-::: .aside
-*More information: [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)*
-:::
-
-## Dutch famine of 1944–1945 
-
-![](img/hongerwinter.jpg){fig-align="center" width=80%}
-
-## Dutch famine of 1944–1945
-
-- Food caloric intake for many Dutch people dropped to fewer than 1000 calories per day. 
-- Provided strong evidence for the concept of "fetal programming". 
-- Changes in methylation patterns have been implicated in subsequent health outcomes. 
-- Findings suggest that severe malnutrition during critical periods of development can lead to epigenetic marks that persist throughout life.
-
-# Methylation is epigenetic 
-
-::: .aside
-*"on top of" or "in addition to" genetic*
-:::
-
-## Landscape of methylation
-
-![](img/DNAme_landscape.png){fig-align="center" width=100%}
-
-## Landscape of methylation in development
-
-![](img/DNA_methylation_reprogramming.png){fig-align="center" width=100%}
-
-
-
-. . .
-
-1) Differential analysis
-2) Prediction model
-
-
-## Differential analysis
-
-$$
-Y \sim X + C
-$$
-
-- $Y$ is our outcome 
-- $X$ is our factor with two levels. Our two or more treatment groups
-- $C$ is our confunder effect of gender or age
-
-**Aim**: To find differences in $Y$ between two or more treatment groups
-
-## Prediction model
-
-$$
-Y \sim X_1 + ... + X_p
-$$
-
-- $Y$ is our binary outcome ($0/1$) 
-- $X_1, ..., X_p$ are the normalised or standardised features
-
-**Aim**: To predict $Y$ by features 
-
-
-## Data
-
-### Microarray-based methods
-
-- Illumina HumanMethylation450 (450k) 
-- Illumina Infinium MethylationEPIC BeadChip targets over 850,000 CpG sites
-- We have idat files  
-
-### High-throughput sequencing
-
-- Bisulfite sequencing (BS-Seq) data
-- We have fastq or sam/bam files
-
-
-## Illumina array 
-
-- Methylated intensity (denoted by M) and unmethylated intensity (denoted by U)
-- $\beta\mbox{-values} = \cfrac{M}{M+U}$
-- $\mbox{M-values} = log2\left(\cfrac{M}{U}\right)$
-
-. . .
-
-**Caution** 
-
-We will use for different aspects the same letters. This might be confusing...
-
-## Any experience?
-
-*Gesa M. Richter and Jochen Kruppa, et al.*
-
-- [A combined epigenome- and transcriptome-wide association study of the oral masticatory mucosa assigns CYP1B1 a central role for epithelial health in smokers](https://link.springer.com/article/10.1186/s13148-019-0697-y)
-
-- [Epigenetic adaptations of the masticatory mucosa to periodontal inflammation](https://link.springer.com/article/10.1186/s13148-021-01190-7)
 
 
 ## The cake is a lie...
 
 ![](img/cake.jpg){fig-align="center" width=60%}
 
-## ... because you do it often!
-
-![](img/miniconda.jpeg){fig-align="center" width=60%}
-
-
-# Let's do a methylation analysis... in R
-
-> *"Snap back to reality, ope, there goes gravity." --- Eminem, Lose yourself*
-
 ## Further reading {.smaller}
 
-- [DNA Methylation and Its Basic Function](https://www.nature.com/articles/npp2012112)
-- [Chapter 10 DNA methylation analysis using bisulfite sequencing data](https://compgenomr.github.io/book/bsseq.html) of the great book [Computational Genomics with R](https://compgenomr.github.io/book/)
-- [A cross-package Bioconductor workflow for analysing methylation array data](https://www.bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html)
-- [Methylation Analysis with `{MEAL}`](https://www.bioconductor.org/packages/devel/bioc/vignettes/MEAL/inst/doc/MEAL.html)
-- [DNA Methylation: Bisulfite Sequencing Workflow](https://github.com/NBISweden/workshop-epigenomics-RTDs/blob/master/docs/content/tutorials/methylationSeq/Seq_Tutorial.rst)
-- [Analysis of 450k data using `{minfi}`](https://www.bioconductor.org/help/course-materials/2015/BioC2015/methylation450k.html) and [The minfi User’s Guide](https://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html)
-- [`{methylKit}`: User Guide v1.2.4](https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/methylKit/inst/doc/methylKit.html)
-- [`{methylGSA}`: Gene Set Analysis for DNA Methylation Datasets](https://bioconductor.org/packages/release/bioc/vignettes/methylGSA/inst/doc/methylGSA-vignette.html)
-- [`{BioMethyl}`: an R package for biological interpretation of DNA methylation data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6761945/)
-- [Bismark](https://www.bioinformatics.babraham.ac.uk/projects/bismark/)
 
+- [Meet Mercy and Anita – the African workers driving the AI revolution, for just over a dollar an hour](https://www.theguardian.com/technology/article/2024/jul/06/mercy-anita-african-workers-ai-artificial-intelligence-exploitation-feeding-machine)
+- [Reddit-Nutzer versuchen KI von Google zu "vergiften"](https://futurezone.at/produkte/reddit-google-gemini-vergiften-kuenstliche-intelligenz-empfehlungen-angus-steakhouse/402969960)
+- [Wieso Google sieben neue Kernkraftwerke bauen lässt](https://www.rnd.de/politik/google-setzt-auf-kernkraft-sieben-neue-reaktoren-fuer-ki-aera-GQWFKVDSC5D6PMEK2WZ5N5NCHY.html#:~:text=Thorium%2DReaktoren%20sollen%20es%20sein,die%20bislang%20%C3%BCbliche%20Wasserk%C3%BChlung%20verzichtbar.)
+- [New nuclear clean energy agreement with Kairos Power](https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/)
+- [A bottle of water per email: the hidden environmental costs of using AI chatbots](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/)
 
 ## References {.smaller}
 

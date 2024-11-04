@@ -15,10 +15,44 @@ format:
       theme: whiteboard
 ---
 
+## First Contact - Die Klammer des Vortrags
+
+::: {layout="[[1], [-1]]"}
+
+![](img/first_contact.jpg){fig-align="center" width="65%"}
+
+:::
 
 ## Wie kann ich helfen?
 
 ![](img/karl.png){fig-align="center" width="50%"}
+
+## Das Fermi Paradoxon: The Great Filter
+
+::: {layout="[[1], [-1]]"}
+
+![](img/dune.png){fig-align="center" width="55%"}
+
+:::
+
+## Das Fermi Paradoxon: The Great Filter
+
+::: {layout="[[1], [-1]]"}
+
+![](img/terminator.png){fig-align="center" width="55%"}
+
+:::
+
+## Das Fermi Paradoxon: The Great Filter
+
+::: {layout="[[1], [-1]]"}
+
+![](img/matrix.png){fig-align="center" width="70%"}
+
+:::
+
+
+## Longtermism {background-color="black" background-image="img/elon.png"}
 
 ## Was willst du tun?
 
@@ -26,6 +60,30 @@ format:
 
 ![](img/was_tun.png){fig-align="center" width="100%"}
 :::
+
+## Prädikives Modell
+
+- **Prädiktiv**: Ich will etwas vorhersagen...
+- **Modell**: Ich will Daten modellieren...
+
+
+Was modellieren wir eigentlich?
+
+
+## Kommunikation ist die Suche nach...
+
+::: {layout-ncol=2}
+
+![](img/eda-preface-03.jpg){fig-align="center" width=60%}
+
+![](img/eda-preface-02.jpg){fig-align="center" width=75%}
+
+:::
+
+
+## Wettervorhersage...
+
+![](img/rain.jpg){fig-align="center" width="100%"}
 
 
 ## Woher lerne ich?

@@ -54,37 +54,42 @@ format:
 
 ## Longtermism {background-color="black" background-image="img/elon.png"}
 
+
+
+## Kommunikation mit der Maschine
+
+::: {layout-ncol=2}
+
+Grace Hopper
+![](img/eda-preface-03.jpg){fig-align="center" width=65%} 
+
+
+![](img/eda-preface-02.jpg){fig-align="center" width=75%}
+Margaret Hamilton
+
+:::
+
+
 ## Was willst du tun?
 
-::: {layout="[[-1], [1], [-1]]"}
+::: {layout="[[1], [-1]]"}
 
 ![](img/was_tun.png){fig-align="center" width="100%"}
 :::
 
-## Prädikives Modell
-
-- **Prädiktiv**: Ich will etwas vorhersagen...
-- **Modell**: Ich will Daten modellieren...
-
-
-Was modellieren wir eigentlich?
-
-
-## Kommunikation ist die Suche nach...
-
-::: {layout-ncol=2}
-
-![](img/eda-preface-03.jpg){fig-align="center" width=60%}
-
-![](img/eda-preface-02.jpg){fig-align="center" width=75%}
-
-:::
-
-
 ## Wettervorhersage...
 
-![](img/rain.jpg){fig-align="center" width="100%"}
+::: {layout="[[1], [-1]]"}
 
+![](img/rain.jpg){fig-align="center" width="50%"}
+:::
+
+## Oberflächentemperatur Nordatlantik
+
+::: {layout="[[1], [-1]]"}
+
+![](img/de_sst_north_atlantic.png){fig-align="center" width="100%"}
+:::
 
 ## Woher lerne ich?
 
@@ -121,13 +126,8 @@ Was modellieren wir eigentlich?
 
 > "In reality, the magic of machine learning is the grind of data labelling." --- Phil Jones
 
-## Gulu
 
-::: {layout="[1], [-1]]"}
-
-![](img/gulu.png){fig-align="center" width="80%"}
-
-:::
+## Gulu {background-color="black" background-image="img/gulu.png"}
 
 ## Reddit
 
@@ -151,11 +151,38 @@ Was modellieren wir eigentlich?
 
 ## Wasser...
 
-::: {layout="[1], [-1]]"}
+::: {layout="[1], [-1]"}
 
 ![](img/water.png){fig-align="center" width="80%"}
 
 :::
+
+## Wo ist der Tumor?
+
+::: {style="font-size: 50%"}
+
+Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly Detection for Precise Area Estimation*
+
+:::
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/tumor_leaf.png){fig-align="center" width="60%"}
+:::
+
+## Wo ist der Tumor?
+
+::: {style="font-size: 50%"}
+
+[Die Flora Incognita-App ermöglicht derzeit die automatische Bestimmung von mehr als 16.000 Gefäßpflanzenarten. Der Bestimmungsprozess ist intuitiv: Nimm ein Bild der Pflanze mit der Kamera Deines Smartphones oder Tablets auf.](https://floraincognita.de/)
+
+:::
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/flora.png){fig-align="center" width="85%"}
+:::
+
 
 ## Die oder das Nutella?
 

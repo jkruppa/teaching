@@ -2,7 +2,7 @@
 title: "Grundlagen der künstlichen Intelligenz"
 subtitle: "Teil II"
 author: "Prof. Dr. habil. Jochen Kruppa-Scheetz"
-date: "09. November 2024"
+date: "08. November 2024"
 format:
   revealjs: 
     logo: logo_osna.png
@@ -124,38 +124,82 @@ Margaret Hamilton
 
 ## Was ist das Label?
 
+:::{layout="[[-1], [1], [-1]]"}
+
 > "In reality, the magic of machine learning is the grind of data labelling." --- Phil Jones
 
+:::
 
 ## Gulu {background-color="black" background-image="img/gulu.png"}
 
-## Reddit
-
-::: {layout="[1], [-1]]"}
-
-![](img/reddit.png){fig-align="center" width="80%"}
-
-:::
 
 ## Was verdient man da so?
 
+:::{layout="[[-1], [1], [-1]]"}
+
 >  "In return for 45 hours of intense, stressful work a week – possibly with unpaid overtime on top – annotators can expect to earn in the region [] approximately $1.16 per hour." --- The Guardian
 
-## Thorium-Reaktor oder small modular reactors (SMR)
+:::
+
+## Der, die, das Nutella
 
 ::: {layout="[1], [-1]]"}
 
-![](img/reaktor.png){fig-align="center" width="80%"}
+![](img/der_nutella.png){fig-align="center" width="100%"}
 
 :::
 
-## Wasser...
+## Der, die, das Nutella
+
+::: {layout="[1], [-1]]"}
+
+![](img/der_nutella.png){fig-align="center" width="90%"}
+
+![](img/die_nutella.png){fig-align="center" width="90%"}
+
+
+:::
+
+## Der, die, das Nutella
+
+::: {layout="[1], [-1]]"}
+
+![](img/der_nutella.png){fig-align="center" width="60%"}
+
+![](img/die_nutella.png){fig-align="center" width="60%"}
+
+![](img/das_nutella.png){fig-align="center" width="60%"}
+
+:::
+
+
+## Der, die, das Nutella - ChatGPT
+
+::: {layout="[1], [-1]]"}
+
+![](img/chat_nutella.png){fig-align="center" width="100%"}
+
+:::
+
+# Energie & Wasser
+
+## Thorium-Reaktor (SMR)
+
+::: {layout="[1], [-1]]"}
+
+![](img/reaktor.png){fig-align="center" width="85%"}
+
+:::
+
+## Wasserverbrauch
 
 ::: {layout="[1], [-1]"}
 
-![](img/water.png){fig-align="center" width="80%"}
+![](img/water.png){fig-align="center" width="85%"}
 
 :::
+
+# Anwendungsbeispiele
 
 ## Wo ist der Tumor?
 
@@ -170,7 +214,7 @@ Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly De
 ![](img/tumor_leaf.png){fig-align="center" width="60%"}
 :::
 
-## Wo ist der Tumor?
+## Was blüht den da?
 
 ::: {style="font-size: 50%"}
 
@@ -183,41 +227,34 @@ Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly De
 ![](img/flora.png){fig-align="center" width="85%"}
 :::
 
+## Reddit
 
-## Die oder das Nutella?
+::: {layout="[1], [-1]]"}
 
-## Wettervorhersage und Regenmengen
+![](img/reddit.png){fig-align="center" width="80%"}
 
-## Trainingsdaten und Testdaten
-
-- Woher kommen die Daten?
-- Wer säubert die Daten?
-
-## Was kostet eine Frage?
-
-- Energie 
-- Wasser
-
-## Welche Kultur entspringen die Daten?
-
-## Machen wir einen Einheitsbrei?
-
-## Paradigmenwechsel
-
-https://de.wikipedia.org/wiki/Paradigmenwechsel
-
-## Zitat zum Ende...
-
-
-> *"Voraussagen sind schwierig, vor allem wenn sie die Zukunft betreffen." — Nils Bohr*
+:::
 
 
 ## The cake is a lie...
 
 ![](img/cake.jpg){fig-align="center" width=60%}
 
-## Further reading {.smaller}
+> *"Voraussagen sind schwierig, vor allem wenn sie die Zukunft betreffen." — Nils Bohr*
 
+# Woher kommen neue Daten für das Training?
+
+## Mehr zu Lesen...
+
+Openbook Bio Data Science: [https://jkruppa.github.io/](https://jkruppa.github.io/)
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/cover2024.png){fig-align="center" width="35%"}
+
+:::
+
+## Quellen & Referenzen {.smaller}
 
 - [Meet Mercy and Anita – the African workers driving the AI revolution, for just over a dollar an hour](https://www.theguardian.com/technology/article/2024/jul/06/mercy-anita-african-workers-ai-artificial-intelligence-exploitation-feeding-machine)
 - [Reddit-Nutzer versuchen KI von Google zu "vergiften"](https://futurezone.at/produkte/reddit-google-gemini-vergiften-kuenstliche-intelligenz-empfehlungen-angus-steakhouse/402969960)
@@ -226,15 +263,6 @@ https://de.wikipedia.org/wiki/Paradigmenwechsel
 - [A bottle of water per email: the hidden environmental costs of using AI chatbots](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/)
 - [The longtermist fear of a future malevolent superintelligence is hindering our progress today](https://www.ceps.eu/the-longtermist-fear-of-a-future-malevolent-superintelligence-is-hindering-our-progress-today/)
 - [Longtermism: "An odd and peculiar ideology"](https://netzpolitik.org/2023/longtermism-an-odd-and-peculiar-ideology/)
-
-## References {.smaller}
-
-- Kruppa, J. *et al.* (2021). Estimands in epigenome-wide association studies. Clinical epigenetics, 13(1), 98.
-- Maksimovic, J. *et al.* (2016). A cross-package Bioconductor workflow for analysing methylation array data. F1000Research, 5.
-- Krueger, F. *et al.* (2011). Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. bioinformatics, 27(11), 1571-1572.
-- Aryee, M. J. *et al.* (2014). Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics, 30(10), 1363-1369.
-- Maksimovic, J. *et al.* (2021). Gene set enrichment analysis for genome-wide DNA methylation data. Genome Biology, 22(1), 173.
-- Wang, Y. *et al.* (2019). BioMethyl: an R package for biological interpretation of DNA methylation data. Bioinformatics, 35(19), 3635-3641.
 
 
 

@@ -15,19 +15,14 @@ format:
       theme: whiteboard
 ---
 
-## First Contact - Die Klammer des Vortrags
-
-::: {layout="[[1], [-1]]"}
-
-![](img/first_contact.jpg){fig-align="center" width="65%"}
-
-:::
-
 ## Wie kann ich helfen?
 
 ![](img/karl.png){fig-align="center" width="50%"}
 
-## Das Fermi Paradoxon: The Great Filter
+## {background-color="black" background-image="img/elon.png"}
+
+
+## Existential risk
 
 ::: {layout="[[1], [-1]]"}
 
@@ -35,7 +30,7 @@ format:
 
 :::
 
-## Das Fermi Paradoxon: The Great Filter
+## Existential risk
 
 ::: {layout="[[1], [-1]]"}
 
@@ -43,7 +38,7 @@ format:
 
 :::
 
-## Das Fermi Paradoxon: The Great Filter
+## Existential risk
 
 ::: {layout="[[1], [-1]]"}
 
@@ -51,23 +46,8 @@ format:
 
 :::
 
-
 ## Longtermism {background-color="black" background-image="img/elon.png"}
 
-
-
-## Kommunikation mit der Maschine
-
-::: {layout-ncol=2}
-
-Grace Hopper
-![](img/eda-preface-03.jpg){fig-align="center" width=65%} 
-
-
-![](img/eda-preface-02.jpg){fig-align="center" width=75%}
-Margaret Hamilton
-
-:::
 
 
 ## Was willst du tun?
@@ -77,7 +57,7 @@ Margaret Hamilton
 ![](img/was_tun.png){fig-align="center" width="100%"}
 :::
 
-## Wettervorhersage...
+## Prädiktives Modell: Wettervorhersage
 
 ::: {layout="[[1], [-1]]"}
 
@@ -93,7 +73,7 @@ Margaret Hamilton
 
 ## Woher lerne ich?
 
-::: {layout="[1], [-1]]"}
+::: {layout="[[1], [-1]]"}
 
 ![](img/trainingTestingNKI.png){fig-align="center" width="80%"}
 :::
@@ -114,9 +94,43 @@ Margaret Hamilton
 
 ![](img/class-bias-04.png){fig-align="center" width="80%"}
 
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="100%"}
+
+
+
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="90%"}
+
+![](img/die_nutella.png){fig-align="center" width="90%"}
+
+
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="60%"}
+
+![](img/die_nutella.png){fig-align="center" width="60%"}
+
+![](img/das_nutella.png){fig-align="center" width="60%"}
+
+
+
+## Der, die, das Nutella - ChatGPT
+
+::: {layout="[[1], [-1]]"}
+
+![](img/chat_nutella.png){fig-align="center" width="100%"}
+
+:::
+
 ## Woher kommt das Wissen?
 
-::: {layout="[1], [-1]]"}
+::: {layout="[[1], [-1]]"}
 
 ![](img/prinzen.jpg){fig-align="center" width="85%"}
 
@@ -127,6 +141,10 @@ Margaret Hamilton
 :::{layout="[[-1], [1], [-1]]"}
 
 > "In reality, the magic of machine learning is the grind of data labelling." --- Phil Jones
+
+> "[...] workers are trained to identify elements of the image in response to client specifications: they may, for example, draw polygons around different objects, from traffic lights to stop signs and human faces." --- Guardian
+
+> "[...] AI revolution: people working under oppressive surveillance at furious intensity just to keep their jobs and support their families." --- Guardian
 
 :::
 
@@ -139,61 +157,30 @@ Margaret Hamilton
 
 >  "In return for 45 hours of intense, stressful work a week – possibly with unpaid overtime on top – annotators can expect to earn in the region [] approximately $1.16 per hour." --- The Guardian
 
-:::
+> "$2.2 billion in 2022 and $17 billion in 2023"
 
-## Der, die, das Nutella
-
-::: {layout="[1], [-1]]"}
-
-![](img/der_nutella.png){fig-align="center" width="100%"}
-
-:::
-
-## Der, die, das Nutella
-
-::: {layout="[1], [-1]]"}
-
-![](img/der_nutella.png){fig-align="center" width="90%"}
-
-![](img/die_nutella.png){fig-align="center" width="90%"}
-
-
-:::
-
-## Der, die, das Nutella
-
-::: {layout="[1], [-1]]"}
-
-![](img/der_nutella.png){fig-align="center" width="60%"}
-
-![](img/die_nutella.png){fig-align="center" width="60%"}
-
-![](img/das_nutella.png){fig-align="center" width="60%"}
+> "[...] AI tools are taken up in retail, healthcare and manufacturing [...] the demand for well-curated data will increase by the day."
 
 :::
 
 
-## Der, die, das Nutella - ChatGPT
 
-::: {layout="[1], [-1]]"}
-
-![](img/chat_nutella.png){fig-align="center" width="100%"}
-
-:::
 
 # Energie & Wasser
 
-## Thorium-Reaktor (SMR)
+## Thorium-Reaktor (SMR) 
 
-::: {layout="[1], [-1]]"}
+::: {layout="[[1], [-1]]"}
 
 ![](img/reaktor.png){fig-align="center" width="85%"}
 
 :::
 
-## Wasserverbrauch
 
-::: {layout="[1], [-1]"}
+
+## Wasserverbrauch zur Kühlung
+
+::: {layout="[[1], [-1]]"}
 
 ![](img/water.png){fig-align="center" width="85%"}
 
@@ -227,13 +214,7 @@ Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly De
 ![](img/flora.png){fig-align="center" width="85%"}
 :::
 
-## Reddit
 
-::: {layout="[1], [-1]]"}
-
-![](img/reddit.png){fig-align="center" width="80%"}
-
-:::
 
 
 ## The cake is a lie...
@@ -243,6 +224,14 @@ Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly De
 > *"Voraussagen sind schwierig, vor allem wenn sie die Zukunft betreffen." — Nils Bohr*
 
 # Woher kommen neue Daten für das Training?
+
+## Reddit
+
+::: {layout="[[1], [-1]]"}
+
+![](img/reddit.png){fig-align="center" width="80%"}
+
+:::
 
 ## Mehr zu Lesen...
 

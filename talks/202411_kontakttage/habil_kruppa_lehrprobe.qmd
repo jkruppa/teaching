@@ -19,7 +19,7 @@ format:
 
 ![](img/karl.png){fig-align="center" width="50%"}
 
-## {background-color="black" background-image="img/elon.png"}
+## Der Algorithmus {background-color="black" background-image="img/elon.png"}
 
 
 ## Existential risk

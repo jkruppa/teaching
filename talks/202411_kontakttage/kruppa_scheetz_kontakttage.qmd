@@ -138,13 +138,13 @@ format:
 
 ## Was ist das Label?
 
-:::{layout="[[-1], [1], [-1]]"}
+::: {style="font-size: 80%"}
 
-> "In reality, the magic of machine learning is the grind of data labelling." --- Phil Jones
+> "In reality, the magic of machine learning is the grind of data labelling."
 
-> "[...] workers are trained to identify elements of the image in response to client specifications: they may, for example, draw polygons around different objects, from traffic lights to stop signs and human faces." --- Guardian
+> "[...] workers are trained to identify elements of the image in response to client specifications: they may draw polygons around different objects, from traffic lights to stop signs and human faces."
 
-> "[...] AI revolution: people working under oppressive surveillance at furious intensity just to keep their jobs and support their families." --- Guardian
+> "[...] AI revolution: people working under oppressive surveillance at furious intensity just to keep their jobs and support their families."
 
 :::
 
@@ -153,7 +153,7 @@ format:
 
 ## Was verdient man da so?
 
-:::{layout="[[-1], [1], [-1]]"}
+::: {style="font-size: 80%"}
 
 >  "In return for 45 hours of intense, stressful work a week – possibly with unpaid overtime on top – annotators can expect to earn in the region [] approximately $1.16 per hour." --- The Guardian
 

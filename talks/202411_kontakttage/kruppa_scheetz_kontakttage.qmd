@@ -1,0 +1,260 @@
+---
+title: "Grundlagen der künstlichen Intelligenz"
+subtitle: "Teil II"
+author: "Prof. Dr. habil. Jochen Kruppa-Scheetz"
+date: "08. November 2024"
+format:
+  revealjs: 
+    logo: logo_osna.png
+    css: logo.css
+    preview-links: auto
+    footer: "[Openbook Bio Data Science | The definitive guide](https://jkruppa.github.io/)"
+    theme: simple
+    slide-number: c/t
+    chalkboard: 
+      theme: whiteboard
+---
+
+## Wie kann ich helfen?
+
+![](img/karl.png){fig-align="center" width="50%"}
+
+## Der Algorithmus {background-color="black" background-image="img/elon.png"}
+
+
+## Existential risk
+
+::: {layout="[[1], [-1]]"}
+
+![](img/dune.png){fig-align="center" width="55%"}
+
+:::
+
+## Existential risk
+
+::: {layout="[[1], [-1]]"}
+
+![](img/terminator.png){fig-align="center" width="55%"}
+
+:::
+
+## Existential risk
+
+::: {layout="[[1], [-1]]"}
+
+![](img/matrix.png){fig-align="center" width="70%"}
+
+:::
+
+## Longtermism {background-color="black" background-image="img/elon.png"}
+
+
+
+## Was willst du tun?
+
+::: {layout="[[1], [-1]]"}
+
+![](img/was_tun.png){fig-align="center" width="100%"}
+:::
+
+## Prädiktives Modell: Wettervorhersage
+
+::: {layout="[[1], [-1]]"}
+
+![](img/rain.jpg){fig-align="center" width="50%"}
+:::
+
+## Oberflächentemperatur Nordatlantik
+
+::: {layout="[[1], [-1]]"}
+
+![](img/de_sst_north_atlantic.png){fig-align="center" width="100%"}
+:::
+
+## Woher lerne ich?
+
+::: {layout="[[1], [-1]]"}
+
+![](img/trainingTestingNKI.png){fig-align="center" width="80%"}
+:::
+
+## Wie lerne ich?
+
+![](img/class-bias-01.png){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-02.jpg){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-03.jpg){fig-align="center" width="80%"}
+
+## Wie lerne ich?
+
+![](img/class-bias-04.png){fig-align="center" width="80%"}
+
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="100%"}
+
+
+
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="90%"}
+
+![](img/die_nutella.png){fig-align="center" width="90%"}
+
+
+## Der, die, das Nutella
+
+
+![](img/der_nutella.png){fig-align="center" width="60%"}
+
+![](img/die_nutella.png){fig-align="center" width="60%"}
+
+![](img/das_nutella.png){fig-align="center" width="60%"}
+
+
+
+## Der, die, das Nutella - ChatGPT
+
+::: {layout="[[1], [-1]]"}
+
+![](img/chat_nutella.png){fig-align="center" width="100%"}
+
+:::
+
+## Woher kommt das Wissen?
+
+::: {layout="[[1], [-1]]"}
+
+![](img/prinzen.jpg){fig-align="center" width="85%"}
+
+:::
+
+## Was ist das Label?
+
+::: {style="font-size: 80%"}
+
+> "In reality, the magic of machine learning is the grind of data labelling."
+
+> "[...] workers are trained to identify elements of the image in response to client specifications: they may draw polygons around different objects, from traffic lights to stop signs and human faces."
+
+> "[...] AI revolution: people working under oppressive surveillance at furious intensity just to keep their jobs and support their families."
+
+:::
+
+## Gulu {background-color="black" background-image="img/gulu.png"}
+
+
+## Was verdient man da so?
+
+::: {style="font-size: 80%"}
+
+>  "In return for 45 hours of intense, stressful work a week – possibly with unpaid overtime on top – annotators can expect to earn in the region [] approximately $1.16 per hour." --- The Guardian
+
+> "$2.2 billion in 2022 and $17 billion in 2023"
+
+> "[...] AI tools are taken up in retail, healthcare and manufacturing [...] the demand for well-curated data will increase by the day."
+
+:::
+
+
+
+
+# Energie & Wasser
+
+## Thorium-Reaktor (SMR) 
+
+::: {layout="[[1], [-1]]"}
+
+![](img/reaktor.png){fig-align="center" width="85%"}
+
+:::
+
+
+
+## Wasserverbrauch zur Kühlung
+
+::: {layout="[[1], [-1]]"}
+
+![](img/water.png){fig-align="center" width="85%"}
+
+:::
+
+# Anwendungsbeispiele
+
+## Wo ist der Tumor?
+
+::: {style="font-size: 50%"}
+
+Lucas Johannsen (2024) *Innovative Leaf Disease Mapping: Unsupervised Anomaly Detection for Precise Area Estimation*
+
+:::
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/tumor_leaf.png){fig-align="center" width="60%"}
+:::
+
+## Was blüht den da?
+
+::: {style="font-size: 50%"}
+
+[Die Flora Incognita-App ermöglicht derzeit die automatische Bestimmung von mehr als 16.000 Gefäßpflanzenarten. Der Bestimmungsprozess ist intuitiv: Nimm ein Bild der Pflanze mit der Kamera Deines Smartphones oder Tablets auf.](https://floraincognita.de/)
+
+:::
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/flora.png){fig-align="center" width="85%"}
+:::
+
+
+
+
+## The cake is a lie...
+
+![](img/cake.jpg){fig-align="center" width=60%}
+
+> *"Voraussagen sind schwierig, vor allem wenn sie die Zukunft betreffen." — Nils Bohr*
+
+# Woher kommen neue Daten für das Training?
+
+## Reddit
+
+::: {layout="[[1], [-1]]"}
+
+![](img/reddit.png){fig-align="center" width="80%"}
+
+:::
+
+## Mehr zu Lesen...
+
+Openbook Bio Data Science: [https://jkruppa.github.io/](https://jkruppa.github.io/)
+
+:::{layout="[[1], [1], [-1]]"}
+
+![](img/cover2024.png){fig-align="center" width="35%"}
+
+:::
+
+## Quellen & Referenzen {.smaller}
+
+- [Meet Mercy and Anita – the African workers driving the AI revolution, for just over a dollar an hour](https://www.theguardian.com/technology/article/2024/jul/06/mercy-anita-african-workers-ai-artificial-intelligence-exploitation-feeding-machine)
+- [Reddit-Nutzer versuchen KI von Google zu "vergiften"](https://futurezone.at/produkte/reddit-google-gemini-vergiften-kuenstliche-intelligenz-empfehlungen-angus-steakhouse/402969960)
+- [Wieso Google sieben neue Kernkraftwerke bauen lässt](https://www.rnd.de/politik/google-setzt-auf-kernkraft-sieben-neue-reaktoren-fuer-ki-aera-GQWFKVDSC5D6PMEK2WZ5N5NCHY.html#:~:text=Thorium%2DReaktoren%20sollen%20es%20sein,die%20bislang%20%C3%BCbliche%20Wasserk%C3%BChlung%20verzichtbar.)
+- [New nuclear clean energy agreement with Kairos Power](https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/)
+- [A bottle of water per email: the hidden environmental costs of using AI chatbots](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/)
+- [The longtermist fear of a future malevolent superintelligence is hindering our progress today](https://www.ceps.eu/the-longtermist-fear-of-a-future-malevolent-superintelligence-is-hindering-our-progress-today/)
+- [Longtermism: "An odd and peculiar ideology"](https://netzpolitik.org/2023/longtermism-an-odd-and-peculiar-ideology/)
+
+
+
+
+
+

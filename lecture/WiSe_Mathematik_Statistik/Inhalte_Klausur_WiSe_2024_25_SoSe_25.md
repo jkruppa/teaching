@@ -13,7 +13,10 @@
 9. Geocaching – Von Satelliten und Plastikdosen
 10. Armee der Finsternis
 
+### Mögliche Aufgaben aus dem Statistikteil
+
 **Es werden drei der folgenden XX Statistikaufgaben in der Klausur drankommen:**
 
-*kommt noch...*
+1. foo
+2. 
 

@@ -5,12 +5,13 @@ bikes_tbl <- read_excel("GitHub/teaching/lecture/WiSe_Spezielle_Statistik/bikes.
 bikes_tbl <- read_excel("bikes.xlsx")
 
 
-ggplot(bikes_tbl, aes(tag_im_Jahr, anzahl_cum)) +
+ggplot(bikes_tbl, aes(tag_im_Jahr, anzahl_cum,
+                      color = as_factor(kw))) +
   theme_minimal() +
   geom_point() +
  #xlim(0, 366) +
  # ylim(0, 1e6) +
-  stat_smooth(method = "lm", fullrange=TRUE )
+  stat_smooth(method = "lm", fullrange=FALSE, se = FALSE)
 
 fit <- lm(anzahl_cum ~ tag_im_Jahr, data = bikes_tbl)
 

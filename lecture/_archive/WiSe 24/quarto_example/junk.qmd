@@ -1,0 +1,39 @@
+---
+title: "Gurkenanalyse"
+author: "Jochen Kruppa-Scheetz"
+lang: de
+format:
+  html:
+    embed-resources: true
+---
+
+## Quarto
+
+Laden der Masterdaten
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(readxl)
+
+master_tbl <-  read_excel("C:/Users/jokruppa/Desktop/quarto_example/2024_Master.xlsx")
+```
+Das ist die Referenz zu @fig-scatter-lin-00
+
+```{r}
+#| message: false
+#| label: fig-scatter-lin-00
+#| fig-align: center
+#| fig-height: 5
+#| fig-width: 4
+#| fig-cap: "Scatterplot von fünfundzwanzig Beobachtungen die sich aus den paarweisen Werten für $x_1$ und $y$ ergeben. Das Ziel einer linearen Regression ist es die rote Gerade zu bestimmen."
+
+ggplot(master_tbl, aes(Variante, AgSt)) +
+  geom_boxplot()
+```
+
+
+

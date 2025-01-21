@@ -1,0 +1,55 @@
+# Laden der nötigen Bibliothek
+library(agridat)
+library(lattice) # falls nicht installiert, install.packages("lattice")
+library(ggplot2) # falls nicht installiert, install.packages("ggplot2")
+library(multcomp)
+library(multcompView)
+
+# Daten laden
+data(crampton.pig)
+dat <- crampton.pig
+
+# Gewichtszunahme berechnen
+dat <- transform(dat, gain=weight2-weight1)
+
+# Diagramm mit lattice erstellen (ursprünglich)
+xyplot(gain ~ feed, dat, group=treatment, type=c('p','r'),
+       auto.key=list(columns=5),
+       xlab="Feed eaten", ylab="Weight gain", main="crampton.pig")
+
+# Diagramm mit ggplot2 erstellen
+ggplot(dat, aes(x = feed, y = gain, color = factor(treatment))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Scatterplot von Futteraufnahme und Gewichtszunahme",
+       x = "Futteraufnahme [g/Tag]",
+       y = "Gewichtszunahme [kg]",
+       color = "Behandlung") +
+  theme_minimal()
+
+ggplot(dat, aes(x = weight1, y = gain, color = factor(treatment))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Scatterplot von Anfangsgewicht und Gewichtszunahme",
+       x = "Anfangsgewicht [kg]",
+       y = "Gewichtszunahme [kg]",
+       color = "Behandlung") +
+  theme_minimal()
+
+# Basis-Anova ohne Kovariaten
+m1 <- lm(weight2 ~ treatment + rep, data=dat)
+print(anova(m1))
+
+# Anova mit Kovariaten
+m2 <- lm(weight2 ~ treatment + rep + weight1 + feed, data=dat)
+print(anova(m2))
+
+# Behandlung entfernen, um das verschachtelte Modell zu testen
+m3 <- lm(weight2 ~ rep + weight1 + feed, data=dat)
+print(anova(m2, m3)) # p-Wert 0.07
+
+# Basis-Anova ohne Kovariaten für Gewichtszunahme
+m4 <- lm(gain ~ treatment + rep, data = dat)
+print(anova(m4))
+
+#Anova optisch als Tabelle darstellen mit R Quarto

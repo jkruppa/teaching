@@ -34,6 +34,12 @@ get_card <- function(type, title, title_col, semester, filename){
   ggsave(filename, width = 1920, height = 1080, units = "px", dpi = 320, bg = "white")
 }
 
+semester <- "Sommersemester 2026"
+
+get_card(type = "Blockwoche", title = c("Einfach sprechen"),
+         title_col = "#ae1116", semester = semester,
+         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/blockwoche.png"))
+
 semester <- "Wintersemester 2026/27"
 
 get_card(type = "Vorlesung", title = c("Mathematik & Statistik"),
@@ -61,7 +67,6 @@ get_card(type = "Vorlesung", title = c("Angewandte Statistik", "und Versuchswese
 get_card(type = "Vorlesung", title = c("Biostatistik"),
          title_col = "#ae1116", semester = semester,
          filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/biostatistik.png"))
-
 
 get_card(type = "Vorlesung", title = c("Modellierung landwirt-", "schaftlicher Daten"),
          title_col = "#ae1116", semester = semester,

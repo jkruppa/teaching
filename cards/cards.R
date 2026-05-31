@@ -38,44 +38,44 @@ semester <- "Sommersemester 2026"
 
 get_card(type = "Blockwoche", title = c("Einfach sprechen"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/blockwoche.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/blockwoche.png"))
 
 semester <- "Wintersemester 2026/27"
 
 get_card(type = "Vorlesung", title = c("Mathematik & Statistik"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/mathematik_statistik.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/mathematik_statistik.png"))
 
 get_card(type = "Vorlesung", title = c("Spezielle Statistik", "und Versuchswesen"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/spezielle_statistik.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/spezielle_statistik.png"))
 
 get_card(type = "Vorlesung", title = c("Statistik"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/statistik.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/statistik.png"))
 
 get_card(type = "Vorlesung", title = c("Angewandte Statistik"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/statistik.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/angewandte_statistik.png"))
 
 
 nosemester <- "Sommersemester 2026"
 
 get_card(type = "Vorlesung", title = c("Angewandte", "Mathematik & Statistik"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/angewandte_mathematik_statistik.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/angewandte_mathematik_statistik.png"))
 
 get_card(type = "Vorlesung", title = c("Angewandte Statistik", "und Versuchswesen"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/angewandte_statistik_versuchswesen.png"))
+         filename = file.path("/Users/jokruppak/GitHub/teaching/cards/angewandte_statistik_versuchswesen.png"))
 
 get_card(type = "Vorlesung", title = c("Biostatistik"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/biostatistik.png"))
+         filename = file.path("/Users/jokruppak/GitHub/teaching/cards/biostatistik.png"))
 
 get_card(type = "Vorlesung", title = c("Modellierung landwirt-", "schaftlicher Daten"),
          title_col = "#ae1116", semester = semester,
-         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/modellierung_landwirtschaftlicher_daten.png"))
+         filename = file.path("/Users/jokruppa/GitHub/teaching/cards/modellierung_landwirtschaftlicher_daten.png"))
 
 
 

@@ -9,7 +9,7 @@ get_card <- function(type, title, title_col, semester, filename){
     coord_cartesian(xlim = c(0, 16), ylim = c(0, 9)) +
     scale_x_continuous(expand = expansion(mult = c(0, 0))) +
     scale_y_continuous(expand = expansion(mult = c(0, 0))) +
-    geom_image(aes(x = 8, y = 1, image = "/Users/kruppajo/work/GitHub/teaching/cards/avatare_scene.png"), 
+    geom_image(aes(x = 8, y = 1, image = "/Users/jokruppa/GitHub/teaching/cards/avatare_scene.png"), 
                size = 1.5) +
     annotate("text", hjust = "left", size = 10, color = "gray50", x = 1, y = 7.5,
              label = type,
@@ -54,7 +54,12 @@ get_card(type = "Vorlesung", title = c("Statistik"),
          title_col = "#ae1116", semester = semester,
          filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/statistik.png"))
 
-semester <- "Sommersemester 2027"
+get_card(type = "Vorlesung", title = c("Angewandte Statistik"),
+         title_col = "#ae1116", semester = semester,
+         filename = file.path("/Users/kruppajo/work/GitHub/teaching/cards/statistik.png"))
+
+
+nosemester <- "Sommersemester 2026"
 
 get_card(type = "Vorlesung", title = c("Angewandte", "Mathematik & Statistik"),
          title_col = "#ae1116", semester = semester,
